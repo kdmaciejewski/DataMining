@@ -7,7 +7,7 @@ import requests
 import PIL
 from io import BytesIO
 from sentence_transformers import SentenceTransformer
-
+from hashlib import sha256
 
 class DummyModel:
     
@@ -48,7 +48,7 @@ class Tools(BaseModel):
 class Ingredient(BaseModel):
     displayText : str
     ingredient: Optional[str]
-    ingredientId: Optional[str]
+    ingredientId: str
     quantity : float
     unit : str
     images : List[Images]
@@ -56,6 +56,8 @@ class Ingredient(BaseModel):
     
     def __init__(self, **data):
         
+        if data["ingredientId"] is None:
+            data["ingredientId"] = sha256(data["displayText"].encode()).hexdigest()
         
         super(Ingredient, self).__init__( **data)
         
