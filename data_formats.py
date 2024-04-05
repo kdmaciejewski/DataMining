@@ -91,6 +91,7 @@ class Recipe(BaseModel):
     description: Optional[str]
     tools: List[Tools]
     ingredients: List[Ingredient]
+    totalTimeMinutes : Optional[int]
     images : List[Images]
     instructions : List[Instructions]
     embedding : List[float] = list()
