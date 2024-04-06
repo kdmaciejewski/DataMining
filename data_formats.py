@@ -17,6 +17,11 @@ class DummyModel:
 EMBEDDING_MODEL = SentenceTransformer("all-MiniLM-L6-v2")
 # EMBEDDING_MODEL = DummyModel()
 
+
+def get_embedding(s : str) -> list[float]:
+    
+    return EMBEDDING_MODEL.encode(s).tolist()
+
 class Images(BaseModel):
     url: Optional[str]
     
