@@ -4,6 +4,8 @@
 
 Structure:
 
+example_queries.ipynb holds our queries with examples
+
 data_formats.py - Dataformats Pydantic Models and Dual Encoder Embedding Function
 save_data.py - Convert into pydantic models with embeddning and save as json
 client.py - holds opensearch client
