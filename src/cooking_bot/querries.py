@@ -1,7 +1,7 @@
 from typing import Optional
 import numpy as np
-from cooking_bot.data_formats import *
-from cooking_bot.client import CLIENT, INDEX_NAME
+from .data_formats import *
+from .client import CLIENT, INDEX_NAME
 
 
 

@@ -5,7 +5,7 @@ import requests
 from PIL import Image
 from io import BytesIO
 from hashlib import sha256
-from cooking_bot.encoders import get_sentence_embedding, get_image_embedding
+from .encoders import get_sentence_embedding, get_image_embedding
 
 class Images(BaseModel):
     url: str

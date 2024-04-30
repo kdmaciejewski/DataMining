@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
 import os
-from cooking_bot.data_formats import *
+from .data_formats import *
 from opensearchpy import OpenSearch
 
 assert load_dotenv()
