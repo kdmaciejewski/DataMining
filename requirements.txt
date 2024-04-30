@@ -1,0 +1,9 @@
+numpy==1.26.4
+opensearch_py==2.4.2
+Pillow==10.3.0
+pydantic==2.7.1
+python-dotenv==1.0.1
+Requests==2.31.0
+sentence_transformers==2.5.1
+torch==2.2.1
+transformers==4.38.2

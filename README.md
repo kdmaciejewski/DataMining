@@ -11,3 +11,8 @@ save_data.py - Convert into pydantic models with embeddning and save as json
 client.py - holds opensearch client
 fill_index.py - Fills our open search index
 queries.py - Holds our queries
+
+## Install
+
+`pip install -r requirements.txt¸¸¸`
+`pip install -e .`
