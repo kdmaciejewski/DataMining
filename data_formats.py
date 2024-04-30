@@ -1,41 +1,41 @@
 import json as json
 from pydantic import BaseModel
 from typing import List, Dict, Optional, Any
-import numpy as np
 import requests
-import requests
-import PIL
+from PIL import Image
 from io import BytesIO
-from sentence_transformers import SentenceTransformer
 from hashlib import sha256
-
-
-class DummyModel:
-
-    def encode(self, something):
-        return np.array([0.2])
-
-
-EMBEDDING_MODEL = SentenceTransformer("all-MiniLM-L6-v2")
-# EMBEDDING_MODEL = DummyModel()
-
-
-def get_embedding(s: str) -> list[float]:
-
-    return EMBEDDING_MODEL.encode(s).tolist()
-
+from encoders import get_sentence_embedding, get_image_embedding
 
 class Images(BaseModel):
     url: str
+    embedding: Optional[List[float]] = None
 
-    def get_image(self, time_out=4) -> Optional[PIL.Image.Image]:
-
-        if self.url is None:
+    def get_image(self, timeout: int = 4) -> Optional[Image.Image]:
+        try:
+            response = requests.get(self.url, timeout=timeout)
+            response.raise_for_status()  
+            return Image.open(BytesIO(response.content))
+        except requests.RequestException as e:
+            print(f"Failed to retrieve image from {self.url}. Error: {e}")
             return None
 
-        response = requests.get(self.url, timeout=time_out)
-        return PIL.Image.open(BytesIO(response.content))
 
+    def __init__(self, **data):
+
+        super(Images, self).__init__(**data)
+
+        if self.embedding is None:
+            img = self.get_image()
+            
+            if img is  None:
+                return
+        
+            try:
+                self.embedding = get_image_embedding(img)
+            except Exception as e:
+                print("Error while encoding images ", e)
+                
 
 class Tools(BaseModel):
     displayName: str
@@ -47,9 +47,7 @@ class Tools(BaseModel):
         super(Tools, self).__init__(**data)
 
         if len(self.embedding) == 0:
-            self.embedding: List[float] = EMBEDDING_MODEL.encode(
-                self.displayName
-            ).tolist()
+            self.embedding: List[float] = get_sentence_embedding(self.displayName)
 
 
 class Ingredient(BaseModel):
@@ -71,7 +69,7 @@ class Ingredient(BaseModel):
         text = self.ingredient or self.displayText
 
         if len(self.embedding) == 0:
-            self.embedding: List[float] = EMBEDDING_MODEL.encode(text).tolist()
+            self.embedding: List[float] = get_sentence_embedding(text)
 
 
 class Instructions(BaseModel):
@@ -88,7 +86,7 @@ class Instructions(BaseModel):
         text = self.stepTitle or self.stepText
 
         if len(self.embedding) == 0:
-            self.embedding: List[float] = EMBEDDING_MODEL.encode(text).tolist()
+            self.embedding: List[float] = get_sentence_embedding(text)
 
 
 class Recipe(BaseModel):
@@ -108,24 +106,24 @@ class Recipe(BaseModel):
         text = self.description or self.displayName
 
         if len(self.embedding) == 0:
-            self.embedding: List[float] = EMBEDDING_MODEL.encode(text).tolist()
+            self.embedding: List[float] = get_sentence_embedding(text)
 
-def create_Recipy(data : Dict[str, Any]):
-    
+
+def create_Recipy(data: Dict[str, Any]):
+
     def recu_remove_null_images(data):
-        
+
         if "images" in data:
             data["images"] = [i for i in data["images"] if i.get("url") is not None]
-            
-        
+
         for v in data.values():
             if isinstance(v, dict):
                 recu_remove_null_images(v)
 
-
     recu_remove_null_images(data)
 
     return Recipe(**data)
+
 
 class QueryHit(BaseModel):
 
@@ -153,6 +151,6 @@ def create_QueryResult(dict, size):
     hits = dict.get("hits", [])
 
     return QueryResult(
-        n_hits= min(n_hits, size),
-        hits=[QueryHit(score=i["_score"], recipe= Recipe(**i["_source"])) for i in hits],
+        n_hits=min(n_hits, size),
+        hits=[QueryHit(score=i["_score"], recipe=Recipe(**i["_source"])) for i in hits],
     )

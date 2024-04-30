@@ -1,15 +1,46 @@
 from data_formats import *
-import json
 from tqdm import tqdm
 from client import INDEX_NAME, CLIENT
+from encoders import SENTENCE_TRANSFORMER_DIM, CLIP_DIM
+from glob import glob
+import pydantic
 
-with open("data_with_embeddings.json", "r") as f:
+sentence_embedding = {
+    "type": "knn_vector",
+    "dimension": SENTENCE_TRANSFORMER_DIM,
+    "method": {
+        "name": "hnsw",
+        "space_type": "innerproduct",
+        "engine": "faiss",
+        "parameters": {"ef_construction": 256, "m": 48},
+    },
+}
 
-    data = json.load(f)
 
-data = [Recipe(**d) for d in data]
+image_dict = {
+    "type": "nested",
+    "properties": {
+        "url": {"type": "keyword"},
+        "embedding": {
+            "type": "knn_vector",
+            "dimension": CLIP_DIM,
+            "method": {
+                "name": "hnsw",
+                "space_type": "innerproduct",
+                "engine": "faiss",
+                "parameters": {"ef_construction": 256, "m": 48},
+            },
+        },
+    },
+}
 
-EMBEDDING_DIM = len(data[0].embedding)
+
+bm25_standard = {
+    "type": "text",
+    "analyzer": "standard",
+    "similarity": "BM25",
+}
+text_standard = {"type": "text", "analyzer": "standard"}
 
 
 index_body = {
@@ -24,94 +55,41 @@ index_body = {
     "mappings": {
         "dynamic": "strict",
         "properties": {
-            "displayName": {
-                "type": "text",
-                "analyzer": "standard",
-                "similarity": "BM25",
-            },
-            "description": {
-                "type": "text",
-                "analyzer": "standard",
-                "similarity": "BM25",
-            },
+            "displayName": bm25_standard,
+            "description": bm25_standard,
             "tools": {
                 "type": "nested",
                 "properties": {
-                    "displayName": {"type": "text", "analyzer": "standard"},
-                    "images": {
-                        "type": "nested",
-                        "properties": {"url": {"type": "keyword"}},
-                    },
-                    "embedding": {
-                        "type": "knn_vector",
-                        "dimension": EMBEDDING_DIM,
-                        "method": {
-                            "name": "hnsw",
-                            "space_type": "innerproduct",
-                            "engine": "faiss",
-                            "parameters": {"ef_construction": 256, "m": 48},
-                        },
-                    },
+                    "displayName": text_standard,
+                    "images": image_dict,
+                    "embedding": sentence_embedding,
                 },
             },
             "ingredients": {
                 "type": "nested",
                 "properties": {
-                    "displayText": {"type": "text", "analyzer": "standard"},
+                    "displayText": text_standard,
                     "ingredient": {"type": "keyword"},
                     "ingredientId": {"type": "keyword"},
                     "quantity": {"type": "float"},
                     "unit": {"type": "keyword"},
-                    "images": {
-                        "type": "nested",
-                        "properties": {"url": {"type": "keyword"}},
-                    },
-                    "embedding": {
-                        "type": "knn_vector",
-                        "dimension": EMBEDDING_DIM,
-                        "method": {
-                            "name": "hnsw",
-                            "space_type": "innerproduct",
-                            "engine": "faiss",
-                            "parameters": {"ef_construction": 256, "m": 48},
-                        },
-                    },
+                    "images": image_dict,
+                    "embedding": sentence_embedding,
                 },
             },
-            "images": {"type": "nested", "properties": {"url": {"type": "keyword"}}},
+            "images": image_dict,
             "instructions": {
                 "type": "nested",
                 "properties": {
                     "stepNumber": {"type": "integer"},
-                    "stepTitle": {"type": "text", "analyzer": "standard"},
-                    "stepText": {"type": "text", "analyzer": "standard"},
-                    "stepImages": {
-                        "type": "nested",
-                        "properties": {"url": {"type": "keyword"}},
-                    },
-                    "embedding": {
-                        "type": "knn_vector",
-                        "dimension": EMBEDDING_DIM,
-                        "method": {
-                            "name": "hnsw",
-                            "space_type": "innerproduct",
-                            "engine": "faiss",
-                            "parameters": {"ef_construction": 256, "m": 48},
-                        },
-                    },
+                    "stepTitle": text_standard,
+                    "stepText": text_standard,
+                    "stepImages": image_dict,
+                    "embedding": sentence_embedding,
                 },
             },
             "totalTimeMinutes": {"type": "integer"},
-            "embedding": {
-                "type": "knn_vector",
-                "dimension": EMBEDDING_DIM,
-                "method": {
-                    "name": "hnsw",
-                    "space_type": "innerproduct",
-                    "engine": "faiss",
-                    "parameters": {"ef_construction": 256, "m": 48},
-                },
-            },
+            "embedding": sentence_embedding,
         },
     },
 }
@@ -128,7 +106,17 @@ if CLIENT.indices.exists(INDEX_NAME):
 
 CLIENT.indices.create(index=INDEX_NAME, body=index_body)
 
-for id, recipe in enumerate(tqdm(data, "Filling Index")):
+
+for id, path in enumerate(tqdm(glob("jsons/*.json"), "Filling Index")):
+    
+    with open(path, "r") as f:
+
+        data = f.read()
+    
+    recipe = Recipe.model_validate_json(data)
+    
+    
+
     response = CLIENT.index(index=INDEX_NAME, body=recipe.model_dump(), id=id)
 
 

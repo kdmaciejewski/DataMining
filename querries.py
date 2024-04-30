@@ -1,11 +1,9 @@
-from dotenv import load_dotenv
 from data_formats import *
 from typing import Optional
-
-assert load_dotenv()
 import numpy as np
-
 from client import CLIENT, INDEX_NAME
+
+
 
 def l2(vec):
     return np.sqrt(np.sum(np.square(vec)))
@@ -53,7 +51,7 @@ def query_recipies(
 
     if mode == "vec" and name:
 
-        embedding = get_embedding(name)
+        embedding = get_sentence_embedding(name)
 
         inner["bool"]["must"].append(
             {
@@ -211,7 +209,7 @@ def ingredient_similarity_search(ingredient: str, size=5) -> List[Ingredient]:
     - List[Ingredient]: A list of ingredients sorted by similarity to the queried ingredient.
     """
     
-    ingredient_embedding = get_embedding(ingredient)
+    ingredient_embedding = get_sentence_embedding(ingredient)
 
     query = {
         "size": size,
