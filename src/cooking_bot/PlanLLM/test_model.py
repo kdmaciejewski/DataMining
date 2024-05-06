@@ -71,7 +71,7 @@ def test_structured_post_request(url: str):
     url = os.path.join(url, "structured")
 
     # check this file to understand the structure of the data
-    with open('project\src\cooking_bot\example_conversation.json') as f:
+    with open('project\src\cooking_bot\PlanLLM\example_conversation.json') as f:
         data = json.load(f)
 
     data = {
@@ -120,7 +120,7 @@ def send_message(url: str, message: str):
 
 def test_chat(url: str):
     
-    with open('project\src\cooking_bot\example_conversation.json') as f:
+    with open('project\src\cooking_bot\PlanLLM\example_conversation.json') as f:
         data = json.load(f)
         
     system_tone = data["system_tone"] 
