@@ -12,7 +12,7 @@ failed = []
 for name, d in tqdm(data.items(), desc="Computing Embeddings"):
 
     try:
-        d = create_Recipy(d)
+        d = create_Recipy(d, calc_embeddings=True)
         
         with open(f"jsons/{name}.json", "w") as f:
             json.dump(d.model_dump(), f)

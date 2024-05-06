@@ -101,6 +101,7 @@ with open("index_body.json", "w") as f:
 
 if CLIENT.indices.exists(INDEX_NAME):
 
+    print("delete existing")
     response = CLIENT.indices.delete(index=INDEX_NAME, timeout=10)
 
 
@@ -118,6 +119,7 @@ for id, path in enumerate(tqdm(glob("jsons/*.json"), "Filling Index")):
     
 
     response = CLIENT.index(index=INDEX_NAME, body=recipe.model_dump(), id=id)
-
+    if response["result"] != "created":
+        print("Failure", response)
 
 CLIENT.indices.close(index=INDEX_NAME)

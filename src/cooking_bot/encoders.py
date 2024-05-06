@@ -12,7 +12,7 @@ from PIL import Image
 import requests
 
 SENTENCE_TRANSORMER = "all-MiniLM-L6-v2" 
-CLIP_MODEL = "openai/clip-vit-base-patch16"
+CLIP_MODEL = "openai/clip-vit-base-patch32"
 
 class DummyModel:
 

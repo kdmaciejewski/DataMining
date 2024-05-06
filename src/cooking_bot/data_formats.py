@@ -7,9 +7,12 @@ from io import BytesIO
 from hashlib import sha256
 from .encoders import get_sentence_embedding, get_image_embedding
 
+
+
+
 class Images(BaseModel):
     url: str
-    embedding: Optional[List[float]] = None
+    embedding: Optional[List[float]] = list()
 
     def get_image(self, timeout: int = 4) -> Optional[Image.Image]:
         try:
@@ -21,21 +24,21 @@ class Images(BaseModel):
             return None
 
 
-    def __init__(self, **data):
-
-        super(Images, self).__init__(**data)
-
-        if self.embedding is None:
-            img = self.get_image()
-            
-            if img is  None:
-                return
+    def calc_embedding(self):
+        if self.embedding:
+            return 
         
-            try:
-                self.embedding = get_image_embedding(img)
-            except Exception as e:
-                print("Error while encoding images ", e)
+        img = self.get_image()
+        
+        if img is  None:
+            return
+    
+        try:
+            self.embedding = get_image_embedding(img)
+        except Exception as e:
+            print("Error while encoding images ", e)
                 
+
 
 class Tools(BaseModel):
     displayName: str
@@ -109,7 +112,30 @@ class Recipe(BaseModel):
             self.embedding: List[float] = get_sentence_embedding(text)
 
 
-def create_Recipy(data: Dict[str, Any]):
+
+def embed_images(re : Recipe):
+    
+    
+    def embedd_and_clean(imgs : List[Images]):
+    
+        to_remove = []
+        for i,img in enumerate(imgs):
+            img.calc_embedding()
+            if not img.embedding:
+                to_remove.append(i)
+        
+        if to_remove:
+            print(f"Removing {len(to_remove)}  empty embeddings")
+        
+        return [i for a,i in enumerate(imgs) if a not in to_remove]
+            
+    re.images = embedd_and_clean(re.images)
+            
+    for ing in re.instructions:
+        ing.stepImages = embedd_and_clean(ing.stepImages)
+        
+
+def create_Recipy(data: Dict[str, Any], calc_embeddings = False):
 
     def recu_remove_null_images(data):
 
@@ -121,13 +147,18 @@ def create_Recipy(data: Dict[str, Any]):
                 recu_remove_null_images(v)
 
     recu_remove_null_images(data)
+    
+    re = Recipe(**data)
+    
+    if calc_embeddings:
+        embed_images(re)
 
-    return Recipe(**data)
+    return re
 
 
-class QueryHit(BaseModel):
 
-    recipe: Recipe
+class QueryHit(Recipe):
+
     score: float
 
 
@@ -152,5 +183,5 @@ def create_QueryResult(dict, size):
 
     return QueryResult(
         n_hits=min(n_hits, size),
-        hits=[QueryHit(score=i["_score"], recipe=Recipe(**i["_source"])) for i in hits],
+        hits=[QueryHit(score=i["_score"], **i["_source"]) for i in hits],
     )

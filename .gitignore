@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 
 jsons/
+notebooks/Lab*.ipynb
 
 # C extensions
 *.so
