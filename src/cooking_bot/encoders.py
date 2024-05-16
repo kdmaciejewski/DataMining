@@ -10,8 +10,10 @@ from abc import ABC, abstractmethod
 import time
 from PIL import Image
 import requests
+from optimum.onnxruntime import ORTModelForFeatureExtraction
+from transformers import AutoTokenizer
 
-SENTENCE_TRANSORMER = "all-MiniLM-L6-v2" 
+SENTENCE_TRANSORMER = "optimum/all-MiniLM-L6-v2" 
 CLIP_MODEL = "openai/clip-vit-base-patch32"
 
 class DummyModel:
@@ -62,13 +64,14 @@ class LazyModel(ABC):
 
 class LazySentenceTransformer(LazyModel):
     def __init__(self) -> None:
-        self.model = SentenceTransformer(SENTENCE_TRANSORMER)
-        
+        self.tokenizer = AutoTokenizer.from_pretrained(SENTENCE_TRANSORMER)
+        self.model = ORTModelForFeatureExtraction.from_pretrained(SENTENCE_TRANSORMER)
     
     def encode_text(self, text : str)  -> list[float]:
         
-        emb = self.model.encode(text, convert_to_numpy=False, convert_to_tensor=True)
-        return self.to_normed_list(emb)
+        inputs = self.tokenizer(text, truncation=True, return_tensors='np')
+        emb = self.model(**inputs)["last_hidden_state"].mean(axis = (0,1))
+        return self.to_normed_list(torch.tensor(emb))
         
     
     

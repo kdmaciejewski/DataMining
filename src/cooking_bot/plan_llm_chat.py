@@ -8,13 +8,14 @@ import os
 from dotenv import load_dotenv
 from pydantic import BaseModel
 import time
+import random
 os.chdir(REPO_PATH)
 
 
 assert load_dotenv()
 
 
-with open(glob("jsons/*.json")[0]) as f:
+with open(random.choice(glob("jsons/*.json"))) as f:
 
     recipe = Recipe.model_validate_json(f.read())
 

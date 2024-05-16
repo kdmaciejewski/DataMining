@@ -2,8 +2,7 @@ from dotenv import load_dotenv
 import os
 from .data_formats import *
 from opensearchpy import OpenSearch
-
-assert load_dotenv()
+from loguru import logger
 
 INDEX_NAME = os.environ["NOVA_SEARCH_US"]
 
@@ -21,11 +20,10 @@ CLIENT = OpenSearch(
     ssl_show_warn=False,
 )
 
-print("asserting index exists")
 
 assert CLIENT.indices.exists(INDEX_NAME)
 
-print("Index exists!")
+logger.success("Index exists!")
 
 
 resp = CLIENT.indices.open(index = INDEX_NAME)

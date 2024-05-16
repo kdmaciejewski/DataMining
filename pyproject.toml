@@ -6,3 +6,6 @@ build-backend = "setuptools.build_meta"
 name = "cooking_bot"
 version = "0.1.0"
 readme = "README.md"
+
+[project.scripts]
+cooking-bot = "cooking_bot.conversation:main"
