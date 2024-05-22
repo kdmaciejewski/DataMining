@@ -1,20 +1,40 @@
 import json as json
-from pydantic import BaseModel
+from typing_extensions import Literal
+from pydantic import BaseModel, StrictBytes
 from typing import List, Dict, Optional, Any
 import requests
 from PIL import Image
 from io import BytesIO
 from hashlib import sha256
 from .encoders import get_sentence_embedding, get_image_embedding
+import base64
 
-
-
+IMAGE_SIZE = 400
 
 class Images(BaseModel):
     url: str
     embedding: Optional[List[float]] = list()
+    bytes : Optional[str] = None
+    
+    def __init__(self, *args, **kwargs):
+        super(Images, self).__init__(*args, **kwargs)
+        
+        if self.bytes is None:
+            img = self.get_image()
+            if img is None:
+                return
 
+            img = img.resize((IMAGE_SIZE,IMAGE_SIZE))
+            img_byte_arr = BytesIO()
+            img.convert("RGB").save(img_byte_arr, format="jpeg")
+            self.bytes = base64.b64encode(img_byte_arr.getvalue()).decode("UTF-8")
+                
+    
     def get_image(self, timeout: int = 4) -> Optional[Image.Image]:
+        
+        if self.bytes is not None:
+            return Image.open(BytesIO(base64.b64decode(self.bytes.encode())))
+        
         try:
             response = requests.get(self.url, timeout=timeout)
             response.raise_for_status()  

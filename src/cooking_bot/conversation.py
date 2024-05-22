@@ -69,9 +69,7 @@ class RecipeChoice:
             logger.debug(f"Intent not for recipy decision {intent}")
             return "I am sorry. I can't understand you. What would you like to cook today?"
         
-        start = time.time()
         embedding = get_sentence_embedding(message)
-        logger.debug(f"sentence emb took {time.time() - start}")
         
         category = get_recipy_category(embedding)
         logger.debug(f"Detected category {category}")
@@ -122,7 +120,7 @@ class RecipeChoice:
             
         elif category == RecipyCategory.Specific:
             
-            res = query_recipies(message, mode="text", size=self.n_suggestions)
+            res = query_recipies(message, mode="vec", size=self.n_suggestions, min_cos_sim=0.2)
             if res.n_hits == 0:
             
                 logger.debug("text did not work. use vec")
@@ -245,9 +243,8 @@ class DialogManager:
             self.state = PlanLLMConv(self.state.final_suggestion)
             response = self.state.call_api()
         
-        print(response)
         
-        return ""
+        return response
     
 
 def main():
@@ -257,8 +254,8 @@ def main():
     manager = DialogManager()  
     
     print("Hey, what would you like to cook today?")      
-    while manager.compute_answer() is not None:
-        pass
+    while (text := manager.compute_answer()) is not None:
+        print(text)
         
     
     

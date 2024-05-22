@@ -31,6 +31,7 @@ image_dict = {
                 "parameters": {"ef_construction": 256, "m": 48},
             },
         },
+        "bytes": {"type": "binary"},
     },
 }
 
