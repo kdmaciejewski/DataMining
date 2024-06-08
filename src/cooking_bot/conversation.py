@@ -1,6 +1,8 @@
 from cooking_bot import REPO_PATH
 from .plan_llm import test_ping, send_message, PromptSettings
-from .manager_utils import Intents, Answer, get_awnser, get_intent, get_best_answer, RecipyCategory, get_recipy_category
+from .manager_utils import Answer, get_awnser, get_best_answer
+from .intent_detector import IntentDetector
+from .intents import Intents, TimeCategory, Difficulty, RecipyCategory, RecipyIntent
 from .data_formats import *
 from .querries import (
     get_recipy_by_ingredients,
@@ -16,19 +18,8 @@ import random
 
 stop_words = set(stopwords.words('english'))
 
-PLAN_INTENTS = {
-    Intents.GoToStepIntent,
-    Intents.ChitChatIntent,
-    Intents.NextStepIntent,
-    Intents.MoreDetailIntent,
-    Intents.CompleteTaskIntent,
-    Intents.RepeatIntent,
-    Intents.IngredientsConfirmationIntent,
-    Intents.StartStepsIntent,
-}
 
-
-
+intent_detector = IntentDetector()
 
 
 class States(Enum):
@@ -69,12 +60,10 @@ class RecipeChoice:
             logger.debug(f"Intent not for recipy decision {intent}")
             return "I am sorry. I can't understand you. What would you like to cook today?"
         
-        embedding = get_sentence_embedding(message)
         
-        category = get_recipy_category(embedding)
-        logger.debug(f"Detected category {category}")
+        rec_intent : RecipyIntent = intent_detector.get_recipy_intent(message)
         
-        response, succes = self.query_recipe(message, category)
+        response, succes = self.query_recipe(message, rec_intent)
         if succes:
             self.state = RecipeChoiceSubstates.AWAITING_APROVAL
             
@@ -103,7 +92,9 @@ class RecipeChoice:
         return s
         
         
-    def query_recipe(self, message, category):
+    def query_recipe(self, message : str, intent : RecipyIntent):
+        
+        category = intent.category
         
         if category == RecipyCategory.General:
             
@@ -153,7 +144,7 @@ class RecipeChoice:
 plan_llm_settings = PromptSettings()
 plan_llm_timeout = 10
 
-class PlanLLMConv:
+class PlanLLMConversation:
     name = States.PLAN_LLM_CONV
     
     
@@ -221,10 +212,9 @@ class DialogManager:
         if message is None:
             message = input("\nYou:\n")
         
-        intent = get_intent(message)
-        logger.debug(f"Message '{message}' - {intent}")
+        intent = intent_detector.get_intent(message)
         
-        if intent == Intents.StopInten:
+        if intent == Intents.StopIntent:
             
             if self.state.name  == States.PLAN_LLM_CONV:
                 
@@ -240,7 +230,7 @@ class DialogManager:
         
         if self.state.name == States.RECIPE_CHOISE and next_state == States.PLAN_LLM_CONV:
             logger.debug("Switching to Plan llm")
-            self.state = PlanLLMConv(self.state.final_suggestion)
+            self.state = PlanLLMConversation(self.state.final_suggestion)
             response = self.state.call_api()
         
         
