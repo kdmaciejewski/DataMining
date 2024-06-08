@@ -70,6 +70,9 @@ class LazySentenceTransformer(LazyModel):
     def encode_text(self, text : str)  -> list[float]:
         
         inputs = self.tokenizer(text, truncation=True, return_tensors='np')
+        
+        inputs = {key : val.astype(np.int64) for key,val in inputs.items()}
+        
         emb = self.model(**inputs)["last_hidden_state"].mean(axis = (0,1))
         return self.to_normed_list(torch.tensor(emb))
         
