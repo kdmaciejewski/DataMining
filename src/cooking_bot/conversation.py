@@ -1,162 +1,91 @@
-from cooking_bot import REPO_PATH
-from .plan_llm import test_ping, send_message, PromptSettings
-from .manager_utils import Answer, get_awnser, get_best_answer
-from .intent_detector import IntentDetector
-from .intents import Intents, TimeCategory, Difficulty, RecipyCategory, RecipyIntent
-from .data_formats import *
-from .querries import (
-    get_recipy_by_ingredients,
-    query_recipies,
-    ingredient_similarity_search,
-    get_most_similar_step,
-)
-import time
-from loguru import logger
-from enum import Enum
-from nltk.corpus import stopwords
-import random
+import os
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
-stop_words = set(stopwords.words('english'))
+from .plan_llm import test_ping, send_message, PromptSettings
+from .intent_detector import IntentDetector
+from .intents import Intents, RecipyIntent
+from cooking_bot.recipy_query import get_recipes
+from .data_formats import *
+from loguru import logger
+from .gui import GuiInterface, CLI_GUI
 
 
 intent_detector = IntentDetector()
+GUI : GuiInterface = CLI_GUI()
 
-
-class States(Enum):
-    RECIPE_CHOISE = 0
-    PLAN_LLM_CONV = 1
     
-    
-class RecipeChoiceSubstates(Enum):
-    Find = 0
-    AWAITING_APROVAL = 1
     
 class RecipeChoice:
     
-    n_suggestions = 5
-    name = States.RECIPE_CHOISE
-    
-    def __init__(self) -> None:
-        self.state = RecipeChoiceSubstates.Find
-        self.suggestions : QueryResult = None 
+    n_suggestions = 5    
         
-    
-    def dosth(self, message : str, intent : Intents) -> tuple[str, States]:
+    def recipe_search(self, question : str = "Hey, what would you like to cook today?") -> Optional[Recipe]:
         
+        res = GUI.show_single_question_and_answer_field(question)
         
+        intent : Intents = intent_detector.get_intent(s = res, agent_prompt= question)
         
-        if self.state == RecipeChoiceSubstates.Find:
-            return self._find_state(message, intent), States.RECIPE_CHOISE
+        if intent == Intents.StopIntent:
+            return
         
-        elif self.state == RecipeChoiceSubstates.AWAITING_APROVAL:
-            return self._waiting_state(message, intent)
-        
-        else:
-            raise ValueError("Wrong state")
-            
-    def _find_state(self, message : str, intent : Intents) -> str:
+        return self._choose_recipy(res, intent=intent)
+                
+
+    def _choose_recipy(self, message : str, intent : Intents):
         
         if intent not in [Intents.SelectIntent, Intents.SuggestionsIntent, Intents.IdentifyProcessIntent]:
             logger.debug(f"Intent not for recipy decision {intent}")
-            return "I am sorry. I can't understand you. What would you like to cook today?"
+            return self.recipe_search("I am sorry. I can't understand you. What would you like to cook today?")
+        
+        suggestions, add_string = self.query_recipe(message=message)
+        
+        if suggestions.n_hits == 0:
+            
+            return self.recipe_search(f"Sadly I dont have a matching recipe{add_string}. Let's try again. What would you like to cook?")
         
         
-        rec_intent : RecipyIntent = intent_detector.get_recipy_intent(message)
+        chosen_recipe = GUI.recipy_choice(suggestions, add_string)
         
-        response, succes = self.query_recipe(message, rec_intent)
-        if succes:
-            self.state = RecipeChoiceSubstates.AWAITING_APROVAL
+        if chosen_recipe is None:
+            return self.recipe_search(f"Let's try to find you something else. What would you like to cook?")
             
-            
-        return response
-    def _waiting_state(self, message : str, intent : Intents)-> tuple[str, States]:
+        return chosen_recipe
         
-        if intent in [Intents.FallbackIntent, Intents.PreviousStepIntent, Intents.StartStepsIntent, Intents.FallbackIntent, Intents.NoIntent]:
-            self.state = RecipeChoiceSubstates.Find
-            self.suggestions = None
-            return "I am sorry that you don't like recipy. Let's try again. What would you like to cook today?", States.RECIPE_CHOISE
+    def query_recipe(self, message : str) -> tuple[QueryResult, str]:
         
-        if intent in [Intents.NextStepIntent, Intents.YesIntent]:
-            
-            return "", States.PLAN_LLM_CONV
-            
-        logger.debug(f"Cant undestand intent in waiting {intent}")
-        return "Sorry, I struggle to understand that. Would you like us to cook choose the recipy?", States.RECIPE_CHOISE
+        intent : RecipyIntent = intent_detector.get_recipy_intent(message)
         
-    
-    def _render_suggestion(self, suggestion : QueryResult):
+        suggestion, max_minutes, max_steps = get_recipes(message = message, intent= intent, n_suggestions= self.n_suggestions)
         
+        add_string = ""
         
-        s = f"""How about this recipe?\n\t{suggestion.hits[0].displayName}"""
-        self.final_suggestion = suggestion.hits[0]
-        return s
-        
-        
-    def query_recipe(self, message : str, intent : RecipyIntent):
-        
-        category = intent.category
-        
-        if category == RecipyCategory.General:
-            
-            res = query_recipies(message, mode="clip", size=self.n_suggestions)
-            if res.n_hits == 0:
-                logger.debug("Clip did not work. Fall back to random choice")
-                res = query_recipies(size=self.n_suggestions * 6)
-                
-                res.n_hits = min(self.n_suggestions, res.n_hits)
-                res.hits = random.choices(res.hits, k = min(self.n_suggestions, res.n_hits))
-            
-            self.suggestions = res
-                    
-            
-        elif category == RecipyCategory.Specific:
-            
-            res = query_recipies(message, mode="vec", size=self.n_suggestions, min_cos_sim=0.2)
-            if res.n_hits == 0:
-            
-                logger.debug("text did not work. use vec")
-                res = query_recipies(message, mode="vec", size=self.n_suggestions, min_cos_sim=-1)
-            
-            self.suggestions = res
+        if max_minutes is not None:
+            add_string = f", which take max {max_minutes} minutes"
+        if max_steps and add_string != "":
+            add_string += " and have few steps" if add_string else ",which have few steps"
+
+        return suggestion, add_string
             
         
-        elif category == RecipyCategory.Ingredient:
-            
-            ingredients = get_awnser(message, "What ingredients did the user list?").text
-            ingredients = ingredients.lower().replace(",","").split(" ")
-            ingredients = [i for i in ingredients if i not in stop_words]
-            
-            logger.debug(f"Extrated ingredients {ingredients}")
-            if not ingredients:
-                return "I could sadly not understand your ingredients", False
-            
-            
-            res = get_recipy_by_ingredients(ingredients)
-            if res.n_hits == 0:
-                return "Sadly I dont have a matching recipe", False
-            self.suggestions = res
-            
-            
-        return self._render_suggestion(self.suggestions), True
-            
-            
-            
+
 plan_llm_settings = PromptSettings()
 plan_llm_timeout = 10
 
 class PlanLLMConversation:
-    name = States.PLAN_LLM_CONV
     
-    
-    
-    INIT_TEMPLATE = "<|prompter|>  You are a taskbot tasked with helping users cook recipes or DIY projects. \
+    INIT_TEMPLATE = '<|prompter|>  You are a taskbot tasked with helping users cook recipes or DIY projects. \
             I will give you a recipe and I want you to help me do it step by step. You should always be \
             empathetic, honest, and should always help me. If I ask you something that does not relate\
             to the recipe you should politely reject the request and try too get me focused on the recipe.\
             I am unsure how to cook something or do something related to the recipe you should help me to \
-            the best of your ability. Please use a {} tone of voice. <|endofturn|> <|prompter|>\
-            The Recipy is called {} and the instruction list is: {}.\
-            The converstaion is already flowing, so start guiding the user in cooking {} with by the first step {}.<|endofturn|> <|assistant|> "
+            the best of your ability. Please use a {} tone of voice. \
+            The Recipy is called {} and the instruction list is: {}. <|endofturn|> <|prompter|>\
+            Start of with a sentence like: "Lets start of with the recipy by doing {}.<|endofturn|> <|assistant|> '
+            
+    def __init__(self, recipe : Recipe):
+            
+        self.history = self._get_init_promt(recipe)
+            
     def _get_init_promt(self, recipe: Recipe):
         recipe_name = recipe.displayName
         system_tone = "neutral"
@@ -167,11 +96,10 @@ class PlanLLMConversation:
             system_tone,
             recipe_name,
             instruction_string,
-            recipe_name,
             recipe.instructions[0].stepText,
         )
     
-    def call_api(self, user_input = None):
+    def get_response(self, user_input = None):
         
         if user_input is not None:
             self.history +=  "<|prompter|> " + user_input + " <|endofturn|> <|assistant|> "
@@ -179,74 +107,48 @@ class PlanLLMConversation:
         model_response = send_message(self.history, plan_llm_settings, plan_llm_timeout)
         
         if model_response is None:
-            return "Sorry, we are having some techical Difficulties."
+            raise ConnectionError("Can't reach Plan LLM API")
             
         self.history += model_response + " <|endofturn|>"    
         return model_response
-    
-    def dosth(self, message : str, intent : Intents) -> tuple[str, States]:
-        
-        return self.call_api(message), States.PLAN_LLM_CONV
-    
-    
-    def __init__(self, recipe : Recipe):    
-        
-        self.history = self._get_init_promt(recipe)
         
 
-class DialogManager:
-
-
-    def __init__(self) -> None:
-
         
-        self.recipe : Optional[Recipe] = None
         
-        self.state = RecipeChoice()
-
+def dialog(init_message : Optional[str] = None):
     
-        
+    recipe = RecipeChoice().recipe_search() if init_message is None else RecipeChoice().recipe_search(init_message)
     
-    def compute_answer(self, message : str = None) -> Optional[str]:
+    if recipe is None:
         
-        if message is None:
-            message = input("\nYou:\n")
+        logger.debug("Recipy is None -> Stop Converstation")
+        return
+    
+    plan_llm_conv = PlanLLMConversation(recipe=recipe)
+    
+    conversation : list[tuple[str,str]] = [("model", plan_llm_conv.get_response())]
+    
+    while (response := GUI.render_plan_llm_conv(conversation=conversation, current_recipe=recipe)) is not None:
         
-        intent = intent_detector.get_intent(message)
+        intent = intent_detector.get_intent(s = response, agent_prompt=conversation[-1][1])
         
         if intent == Intents.StopIntent:
-            
-            if self.state.name  == States.PLAN_LLM_CONV:
-                
-                self.state = RecipeChoice()
-                return "Do you want to try a different Recipe?"
-                
-            logger.info("Stopping conversation")
-            return None
-        elif intent == Intents.InappropriateIntent:
-            return "Please, this is inapporiate."
-
-        response, next_state = self.state.dosth(message, intent)
+            break
         
-        if self.state.name == States.RECIPE_CHOISE and next_state == States.PLAN_LLM_CONV:
-            logger.debug("Switching to Plan llm")
-            self.state = PlanLLMConversation(self.state.final_suggestion)
-            response = self.state.call_api()
+        conversation.append(("user", response))
         
-        
-        return response
+        conversation.append(("model",plan_llm_conv.get_response( response)))
     
-
+    dialog("Okay. Would you like to cook another recipe? If not say stop - else tell me what you would like to cook?")
+    
+        
+        
 def main():
     
     test_ping(timeout=plan_llm_timeout)
     get_sentence_embedding("load model")
-    manager = DialogManager()  
     
-    print("Hey, what would you like to cook today?")      
-    while (text := manager.compute_answer()) is not None:
-        print(text)
-        
+    dialog()    
     
     
 
