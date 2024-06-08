@@ -13,12 +13,12 @@ class GuiInterface(ABC):
     @abstractmethod
     def recipy_choice(self, results : QueryResult, additional_text :str) -> Optional[Recipe]:
         """
-        Render the results and return chosen Recipe. If user wants to go back/choose another recipy return None
+        Render the recipy recommendations and return chosen Recipe. If user wants to go back/choose another recipy return None
         """
     
     
     def render_plan_llm_conv(self, conversation : list[tuple[str,str]], current_recipe : Recipe) -> Optional[str]:
-        """Window for during the conversation. Show recipy and image/ instruction images perhabs
+        """Window for during the plan llm conversation. Show recipy and image/ instruction images perhabs
 
         Args:
             conversation : list[tuple[str,str]] - list of tuples of wether model or user and text
@@ -26,6 +26,9 @@ class GuiInterface(ABC):
 
         Returns:
             Optional[str]: String answer of user or None if stop/cancel
+            
+            
+        conversation[-1][-1] is last plan llm resonse
         """
 
 
