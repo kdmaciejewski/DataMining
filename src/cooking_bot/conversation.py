@@ -8,11 +8,11 @@ from cooking_bot.recipy_query import get_recipes
 from .data_formats import *
 from loguru import logger
 from .gui import GuiInterface, CLI_GUI
-
+from .gui import GuiInterface, CLI_GUI, TkinterGUI
 
 intent_detector = IntentDetector()
-GUI : GuiInterface = CLI_GUI()
-
+# GUI : GuiInterface = CLI_GUI()
+GUI : GuiInterface = TkinterGUI()
     
     
 class RecipeChoice:
@@ -148,8 +148,8 @@ def main():
     test_ping(timeout=plan_llm_timeout)
     get_sentence_embedding("load model")
     
-    dialog()    
-    
+    dialog()
+    GUI.run()
     
 
 
