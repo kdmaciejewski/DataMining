@@ -1,810 +1,1040 @@
 ,text,queries,time,difficulty
-0,What to cook with scallops and bacon?,1,0,0
-1,Fast and healthy dinner ideas,3,2,0
-2,Instructions for making enchiladas,2,0,0
-3,How to prepare a classic vegetable stir-fry?,2,0,0
-4,Recipes using spinach and ricotta,1,0,0
-5,Instructions for making garlic bread,2,0,0
-6,Quick and healthy dinner recipes,3,2,0
-7,What can I make with zucchini and tomatoes?,1,0,0
-8,What can I make with lentils and carrots?,1,0,0
-9,What to cook with beef and bell peppers?,1,0,0
-10,How to prepare a classic chicken alfredo?,2,0,0
-11,Instructions for making apple pie,2,0,0
-12,Ideas for a savory dish with beans and rice,1,0,0
-13,Give me a recipe for a fancy appetizer,0,0,0
-14,Instructions for a gourmet pizza,2,0,0
-15,Instructions for making chocolate chip cookies,2,0,0
-16,Recipes using spinach and feta,1,0,0
-17,What to prepare with quinoa and black beans?,1,0,0
-18,I want a quick snack idea,3,2,0
-19,Show me something that looks light and tasty,0,0,0
-20,What can I cook with potatoes and leeks?,1,0,0
-21,Easy recipes for a quick dinner,3,2,0
-22,Find me a dish that looks creamy and indulgent,0,0,0
-23,How to make a classic pie?,2,0,0
-24,Recipe for baked ziti,2,0,0
-25,How to make a creamy mushroom soup?,2,0,0
-26,Easy recipes for brunch,3,0,1
-27,Recipes with quinoa and black beans,1,0,0
-28,Find me a dessert that looks elegant and sophisticated,0,0,0
-29,What can I make with spinach and ricotta?,1,0,0
-30,I need a lunch idea that's fast to make,3,2,0
-31,Quick recipes for a healthy breakfast,3,2,0
-32,Quick and easy lunch ideas,3,2,0
-33,Quick vegetarian dinner ideas,3,2,0
-34,How to make a classic soufflé?,2,0,0
-35,How to prepare a traditional coq au vin?,2,0,0
-36,What to cook with bacon and cheese?,1,0,0
-37,"Show me a recipe for a light, refreshing drink",0,0,0
-38,What can I make with potatoes and cheese?,1,0,0
-39,Some easy-to-prepare brunch recipes,3,0,1
-40,I want a meal that looks decadent and rich,0,0,0
-41,Step-by-step to make a classic beef burger,2,0,0
-42,Instructions for making a traditional ratatouille,2,0,0
-43,Looking for a dessert that looks light and fluffy,0,0,0
-44,Show me a recipe for a comforting soup,3,2,0
-45,I want to make a classic lasagna,2,0,0
-46,Easy-to-prepare lunch recipes,3,0,1
-47,Recipes with shrimp and avocado,1,0,0
-48,Easy-to-make breakfast recipes,3,0,1
-49,Recipe for classic tiramisu,2,0,0
-50,What can I cook with pork and cabbage?,1,0,0
-51,Instructions for making classic macaroni and cheese,2,0,0
-52,How to make a simple vegetable stir-fry,2,0,0
-53,Recipes for a chicken and rice casserole,1,0,0
-54,Show me recipes for a healthy lunch,3,0,0
-55,What can I prepare with zucchini and feta cheese?,1,0,0
-56,Suggest some easy-to-make breakfast recipes,3,0,1
-57,I need a recipe that looks delicate and takes 70 minutes,0,1,0
-58,What to cook with beans and quinoa?,1,0,0
-59,Recipes using salmon and quinoa,1,0,0
-60,What can I make with eggs and cheese?,1,0,0
-61,Easy-to-make soup recipes,3,0,1
-62,What to cook with bacon and eggs in a short amount of time?,1,2,0
-63,What to cook with bell peppers and rice?,1,0,0
-64,Find me a dish that looks vibrant,0,0,0
-65,Step-by-step to make a lemon meringue pie,2,0,0
-66,How do I make a perfect chicken marsala?,2,0,0
-67,I need a simple fish recipe,3,0,0
-68,Quick breakfast recipes for a busy day,3,2,0
-69,I need a recipe that looks elegant but is easy to make,0,0,0
-70,Quick lunch ideas for a busy workday,3,2,0
-71,What to prepare with cabbage and carrots?,1,0,0
-72,I need a recipe that looks gourmet,0,0,0
-73,Easy recipes for snacks,3,0,1
-74,Give me an easy recipe for vegetable curry,3,0,1
-75,I need a recipe that looks impressive for a dinner party,0,0,0
-76,Show me a dessert that looks rich and decadent,0,0,0
-77,Quick dinner ideas for a busy evening,3,2,0
-78,How to make a traditional mac and cheese?,2,0,0
-79,Show me a fancy dessert recipe,0,0,0
-80,Step-by-step to make a classic beef stew,2,0,0
-81,Recipes for a beef and barley soup,1,0,0
-82,Recipe for homemade bagels,2,0,0
-83,Show me a fast pasta recipe,3,2,0
-84,How to cook a delicious bolognese sauce?,2,0,0
-85,Show me a quick dessert recipe,3,2,0
-86,Recipe for a traditional Japanese ramen,2,0,0
-87,Looking for a refreshing drink,0,0,0
-88,Show me a quick lunch recipe,3,2,0
-89,Quick ideas for dinner,3,2,0
-90,Recipes with ground beef and beans,1,0,0
-91,What to cook with turkey and quinoa?,1,0,0
-92,I need a dish that looks healthy,0,0,0
-93,Show me an easy lunch recipe,3,2,0
-94,Recipe for homemade crepes,2,0,0
-95,Show me a recipe for a visually stunning dessert,0,0,0
-96,Show me a recipe for a quick and tasty lunch,3,2,0
-97,Fast and healthy lunch ideas,3,2,0
-98,I need a recipe that looks colorful and inviting,0,0,0
-99,How to make a classic pasta carbonara?,2,0,0
-100,Instructions for making risotto,2,0,0
-101,I need a meal that looks fresh and delicious,0,0,0
-102,Instructions for making guacamole,2,0,0
-103,Show me a dinner recipe that's low in calories,3,0,0
-104,What can I make with turkey and cranberries?,1,0,0
-105,Recipes using sweet potatoes and spinach,1,0,0
-106,Show me a recipe that looks decadent,0,0,0
-107,How to prepare a classic chicken parmesan?,2,0,0
-108,Step-by-step to make a classic beef ragu,2,0,0
-109,Show me a colorful dessert,0,0,0
-110,Step-by-step to make a classic beef bourguignon,2,0,0
-111,How do I make spaghetti carbonara?,2,0,0
-112,Show me a quick vegetarian dinner recipe,3,2,0
-113,I want to cook something vibrant and colorful,0,0,0
-114,Quick breakfast recipes for beginners,3,2,1
-115,Show me a dessert that looks rich and indulgent,0,0,0
-116,Instructions for making bruschetta,2,0,0
-117,Show me a dish that looks rich and creamy,0,0,0
-118,Easy-to-make dinner ideas,3,0,1
-119,What can I make with chickpeas and spinach?,1,0,0
-120,Instructions for making creamy mashed potatoes,2,0,0
-121,Guide to making a traditional beef stew,2,0,0
-122,How to make a traditional apple pie?,2,0,0
-123,Show me a dish that looks decadent,0,0,0
-124,How to prepare a seafood paella?,2,0,0
-125,I want to make a hearty chili,2,0,0
-126,Find a recipe that looks beautiful,0,0,0
-127,Recipes using turkey and cranberries,1,0,0
-128,I need a dish that looks sumptuous,0,0,0
-129,Show me a recipe for a colorful salad,0,0,0
-130,I need a recipe for breakfast muffins,2,0,0
-131,Guide me on making a classic cheesecake,2,0,0
-132,Instructions for making lasagna,2,0,0
-133,Show me a recipe for a colorful drink,0,0,0
-134,Recipes with shrimp and coconut milk,1,0,0
-135,I need a dish that looks rich and takes 75 minutes,0,1,0
-136,What can I cook with rice and beans?,1,0,0
-137,I need a recipe that looks rustic and takes 60 minutes,0,1,0
-138,Recipe for homemade tacos,2,0,0
-139,What can I bake with blueberries and yogurt?,1,0,0
-140,How to prepare a classic French toast?,2,0,0
-141,How to prepare risotto?,2,0,0
-142,I need a recipe for a classic risotto,2,0,0
-143,Step-by-step to make a classic beef casserole,2,0,0
-144,I need a recipe for a simple stew,2,0,0
-145,How can I use tomatoes and mozzarella in a dish?,1,0,0
-146,Easy snack recipes for beginners,3,0,1
-147,I want to make a traditional pudding,2,0,0
-148,Looking for a dish that looks rich and creamy,0,0,0
-149,Simple lunch ideas for busy days,3,0,1
-150,Step-by-step to make a classic key lime pie,2,0,0
-151,How to cook a traditional paella?,2,0,0
-152,Easy recipes for pasta,3,0,1
-153,What can I make with zucchini and basil?,1,0,0
-154,Recipe for a classic French onion soup,2,0,0
-155,How to prepare a simple pasta carbonara?,2,0,0
-156,Recipes for a chicken pot pie,1,0,0
-157,Suggest a quick and easy dinner recipe,3,2,0
-158,Recipes with tofu and bell peppers,1,0,0
-159,What can I cook with lentils and sweet potatoes?,1,0,0
-160,Recipes with quinoa and avocado,1,0,0
-161,How to prepare a traditional moussaka?,2,0,0
-162,Give me a recipe that looks fresh and colorful,0,0,0
-163,Recipes for a sweet potato casserole,1,0,0
-164,Easy dinner ideas for beginners,3,0,1
-165,Suggest some easy-to-make brunch recipes,3,0,1
-166,I need a dish that looks light and fresh,0,0,0
-167,Show me a dessert recipe that looks luxurious,0,0,0
-168,Suggestions for a low-carb meal with cauliflower and broccoli,1,0,0
-169,What can I cook with mushrooms and rice?,1,0,0
-170,How to make homemade granola?,2,0,0
-171,Guide me on making a traditional borscht,2,0,0
-172,What can I cook with scallops and lemon?,1,0,0
-173,Recipe for classic beef stew,2,0,0
-174,I'd like a recipe that looks luxurious but is simple to make,0,0,0
-175,Show me a light and airy dessert,0,0,0
-176,Recipes with lentils and spinach,1,0,0
-177,Show me an easy breakfast recipe,3,2,0
-178,How to make a classic beef bourguignon?,2,0,0
-179,Recipe for classic chocolate chip cookies,2,0,0
-180,Step-by-step to make chocolate cake,2,0,0
-181,How to make a classic risotto?,2,0,0
-182,What to cook with ground beef and beans?,1,0,0
+0,Give me a beginner-friendly recipe for spaghetti,3,0,1
+1,Suggest a simple and quick dinner,3,2,0
+2,What to cook with bacon and eggs?,1,0,0
+3,What can I bake with almonds and honey?,1,0,0
+4,Quick vegetarian recipes,3,2,0
+5,Fast and healthy lunch ideas,3,2,0
+6,Show me something that looks light and airy,0,0,0
+7,Recipe for a classic French onion soup,2,0,0
+8,I'm looking for a creamy and delicious dish,0,0,0
+9,Grilled cheese under 15 quick,2,1,2
+10,I want to cook something that looks healthy,0,0,0
+11,Step-by-step to make a classic beef ragu,2,0,0
+12,Show me a recipe for a vibrant smoothie,0,0,0
+13,Instructions for making a classic bread,2,0,0
+14,I need a recipe that looks impressive but is quick to make,0,0,1
+15,Show me quick lunch recipes,3,2,0
+16,How to make a classic pancake?,2,0,0
+17,Suggest some easy-to-make breakfast recipes,3,0,1
+18,How do I make spaghetti carbonara?,2,0,0
+19,Recipes with quinoa and avocado,1,0,0
+20,How to prepare a traditional moussaka?,2,0,0
+21,What can I make with chicken and mushrooms?,1,0,0
+22,Recipes using broccoli and cheddar,1,0,0
+23,I need a recipe for a simple soup,2,0,0
+24,What to cook with chickpeas and kale?,1,0,0
+25,Can you suggest a colorful side dish?,0,0,0
+26,Easy snack recipes for kids,3,0,1
+27,What can I make with shrimp and asparagus?,1,0,0
+28,How to make chicken tikka masala?,2,0,0
+29,Show me a quick and easy breakfast recipe,3,2,0
+30,What can I make with kale and quinoa?,1,0,0
+31,Quick lunch recipes with vegetables,3,2,0
+32,What can I cook with sweet potatoes and black beans?,1,0,0
+33,Quiche Lorraine,2,0,0
+34,Give me an easy recipe for chicken parmesan,3,0,1
+35,I need a dish that looks fancy,0,0,0
+36,How to make a visually appealing salad,0,0,0
+37,I'd like a recipe that looks luxurious but is simple to make,0,0,0
+38,Dessert choices,3,0,0
+39,Show me a recipe for a visually appealing salad,0,0,0
+40,Step-by-step to make chicken curry,2,0,0
+41,Instructions for making a classic burger,2,0,0
+42,Show me a dish that looks luxurious,0,0,0
+43,Quick recipes for a healthy dinner,3,2,0
+44,Easy-to-make soup recipes,3,0,1
+45,Roasted duck simple,2,0,1
+46,Tiramisu fast,2,2,0
+47,Step-by-step to make a traditional curry,2,0,0
+48,Looking for a dish that looks colorful and fresh,0,0,0
+49,Quick recipes with chicken,3,2,0
+50,Step-by-step to make a crème brûlée,2,0,0
+51,Suggest a quick lunch recipe,3,2,0
+52,Show me a dish that looks light and fresh,0,0,0
+53,Show me a dessert that looks rich and indulgent,0,0,0
+54,I want to make a classic bread,2,0,0
+55,Recipes with quinoa and vegetables,1,0,0
+56,Pork tenderloin,2,0,0
+57,Instructions for making beef tacos,2,0,0
+58,What can I cook with potatoes and leeks?,1,0,0
+59,Recipe for classic chocolate chip cookies,2,0,0
+60,"What can I make with chicken, spinach, and cheese?",1,0,0
+61,Find me a dish that looks like a gourmet meal,0,0,0
+62,What can I make with pork and apples?,1,0,0
+63,Fast lunches,3,2,0
+64,Curry chicken quick,2,2,0
+65,What can I make with eggs and cheese?,1,0,0
+66,What can I cook with pork and cabbage?,1,0,0
+67,How to prepare a classic chicken alfredo?,2,0,0
+68,Guide me on making a traditional minestrone,2,0,0
+69,What to cook with chicken and broccoli?,1,0,0
+70,Squash soup fast simple,2,2,1
+71,Gazpacho under 30 beginner,2,1,1
+72,Curry chicken how-to,2,0,0
+73,I want to bake something that looks festive,0,0,0
+74,I want a quick snack idea,3,2,0
+75,I need a recipe that looks rustic and takes 70 minutes,0,1,0
+76,What can I bake with cherries and almonds?,1,0,0
+77,Show me a dish that looks refreshing,0,0,0
+78,Step-by-step to make a classic key lime pie,2,0,0
+79,Easy snack ideas for beginners,3,0,1
+80,I need a recipe that looks festive,0,0,0
+81,Beef stroganoff beginner,2,0,1
+82,Recipes with ground beef and beans,1,0,0
+83,Beef stroganoff quick beginner,2,2,1
+84,How to make a classic sandwich?,2,0,0
+85,Step-by-step to make a classic beef casserole,2,0,0
+86,Breakfasts for beginners,3,0,1
+87,How to make a classic brownie?,2,0,0
+88,I need something quick for lunch,3,2,0
+89,Mushroom risotto under 30,2,1,0
+90,How to make a classic risotto?,2,0,0
+91,Quick recipes with beef,3,2,0
+92,Instructions for a classic lobster bisque,2,0,0
+93,Sushi rolls quick,2,2,0
+94,I want to make a traditional pudding,2,0,0
+95,Find me a dessert that looks rich and decadent,0,0,0
+96,What can I make with quinoa and vegetables?,1,0,0
+97,Instructions for a classic Caesar salad,2,0,0
+98,What can I cook with beef and bell peppers?,1,0,0
+99,Suggest some easy-to-make dinner recipes,3,0,1
+100,Recipe for spaghetti carbonara,2,0,0
+101,Quick recipes for a healthy breakfast,3,2,0
+102,Instructions for a classic bolognese,2,0,0
+103,I need a recipe that looks delicate,0,0,0
+104,Recipes using salmon and quinoa,1,0,0
+105,Recipe for homemade pizza,2,0,0
+106,Chicken tikka speedy,2,2,0
+107,I need a visually stunning dessert,0,0,0
+108,How do I make a perfect beef bourguignon?,2,0,0
+109,What to cook with bell peppers and chicken?,1,0,0
+110,Couscous,2,0,0
+111,Tomato bruschetta recipe,2,0,0
+112,Tacos under 15,2,1,0
+113,Guide me on making a classic shepherd's pie,2,0,0
+114,I'm looking for a dish that looks elegant,0,0,0
+115,Tell me how to make a traditional carbonara,2,0,0
+116,Show me a dinner recipe that's easy to make,3,0,1
+117,Easy-to-make dinner recipes for beginners,3,0,1
+118,Step-by-step to make beef tacos,2,0,0
+119,Recipes with sweet potatoes and kale,1,0,0
+120,Vegetable stir-fry,2,0,0
+121,Show me a recipe for a quick and healthy dinner,3,2,0
+122,Mushroom risotto under 30 beginner,2,1,1
+123,Banana bread instructions,2,0,0
+124,Recipes with shrimp and coconut milk,1,0,0
+125,Recipe for homemade crepes,2,0,0
+126,How to prepare a classic vegetable soup?,2,0,0
+127,I need a lunch idea that's fast to make,3,2,0
+128,Chicken burger under 20 quick,2,1,2
+129,Speedy dinner under 30,3,1,0
+130,I want to make something that looks mouthwatering,0,0,0
+131,Show me a dish that looks fancy,0,0,0
+132,What can I bake with berries and cream?,1,0,0
+133,How to make a creamy mushroom soup?,2,0,0
+134,Baked salmon quick easy,2,2,1
+135,Easy breakfast ideas for busy mornings,3,0,1
+136,I need a recipe that looks delicate and takes 60 minutes,0,1,0
+137,Quiche Lorraine fast,2,2,0
+138,What to cook with pork and beans?,1,0,0
+139,What can I cook with mushrooms and rice?,1,0,0
+140,Suggest an easy soup recipe,3,0,1
+141,Quick dinner ideas for busy nights,3,2,0
+142,How to make a simple chicken noodle soup,2,0,0
+143,What can I prepare with lentils and carrots?,1,0,0
+144,Show me a dessert that looks light and airy,0,0,0
+145,Breakfast quick,3,2,0
+146,I need a simple pasta dish for beginners,3,0,1
+147,Instructions for making chocolate chip cookies,2,0,0
+148,Show me a dessert that looks elegant and sophisticated,0,0,0
+149,How to prepare a traditional shepherd's pie?,2,0,0
+150,Show me a quick dessert recipe,3,2,0
+151,Recipe for baked ziti,2,0,0
+152,I want to make a traditional stew,2,0,0
+153,Paella under 30,2,1,0
+154,How to prepare a traditional shakshuka?,2,0,0
+155,Quick recipes with fish,3,2,0
+156,Stuffed peppers instructions,2,0,0
+157,Fried rice quick,2,2,0
+158,How to make a classic burger?,2,0,0
+159,What can I prepare with lentils and spinach?,1,0,0
+160,Instructions for making apple pie,2,0,0
+161,How to prepare a delicious chicken curry,2,0,0
+162,Recipes using spinach and feta,1,0,0
+163,Easy dinner ideas for beginners,3,0,1
+164,I need a dish that looks light and airy,0,0,0
+165,Find a recipe that looks colorful and fun,0,0,0
+166,Show me a recipe for a colorful drink,0,0,0
+167,I need a recipe for a simple stir fry,2,0,0
+168,Instructions for making guacamole,2,0,0
+169,How to make a classic soufflé?,2,0,0
+170,Instructions for a classic beef stroganoff,2,0,0
+171,Show me a dish that looks delicious,0,0,0
+172,Dinner under 20 simple,3,1,1
+173,Gluten-free breakfasts quickly,3,2,0
+174,Berry pavlova soon,2,2,0
+175,What can I bake with pears and cinnamon?,1,0,0
+176,What to easy recipe cook with bacon and eggs?,1,0,1
+177,What to cook with turkey and cranberries?,1,0,0
+178,Show me a recipe for an easy dessert,3,0,1
+179,Give me an easy recipe for chicken noodle soup,3,0,1
+180,Seafood chowder quick,2,2,0
+181,I'm looking for a recipe that's visually stunning,0,0,0
+182,I need a recipe that looks impressive for a dinner party,0,0,0
 183,Find me a dessert that looks fancy,0,0,0
-184,What to cook with bell peppers and chicken?,1,0,0
-185,I need a visually stunning dessert,0,0,0
-186,Guide me on making a traditional shepherd's pie,2,0,0
-187,Suggest a dish that looks visually impressive,0,0,0
-188,How to bake a chocolate cake?,2,0,0
-189,I want to make something that looks appetizing,0,0,0
-190,Recipe for making tiramisu,2,0,0
-191,What can I make with eggs and bell peppers?,1,0,0
-192,What is a good recipe for a paleo dinner?,3,0,0
-193,What can I prepare with chicken and broccoli?,1,0,0
-194,What to cook with cod and potatoes?,1,0,0
-195,What can I bake with bananas and chocolate?,1,0,0
-196,I want to cook something that looks delightful,0,0,0
-197,How to make chicken curry?,2,0,0
-198,Looking for a visually appealing smoothie bowl,0,0,0
-199,How to prepare a traditional pad Thai?,2,0,0
-200,I need a recipe that looks delicate and takes 90 minutes,0,1,0
-201,Find a recipe that looks festive and bright,0,0,0
-202,How do I make a perfect roast chicken?,2,0,0
-203,Recipes using broccoli and cheddar,1,0,0
-204,What can I cook with beef and bell peppers?,1,0,0
-205,Ideas for dishes with salmon and dill,1,0,0
-206,Suggest some easy-to-make snacks,3,0,1
-207,Some easy-to-prepare dinner recipes,3,0,1
-208,Instructions for making a classic cheeseburger,2,0,0
-209,I want to make a classic soup,2,0,0
-210,I want to make a traditional stew,2,0,0
-211,I need a dish with carrots and chickpeas,1,0,0
-212,Give me a recipe for a vibrant smoothie,0,0,0
-213,Suggest a dish that looks colorful and takes 45 minutes,0,1,0
-214,Suggestions for a quick and tasty dinner,3,2,0
-215,What can I prepare with spinach and feta cheese?,1,0,0
-216,I need a recipe for a simple soup,2,0,0
-217,Guide to making a traditional lasagna,2,0,0
-218,I need a recipe that looks indulgent,0,0,0
-219,How to make sushi?,2,0,0
-220,Suggest a visually appealing dessert,0,0,0
-221,Instructions for a classic French onion soup,2,0,0
-222,What can I bake with pears and walnuts?,1,0,0
-223,What can I prepare with zucchini and cheese?,1,0,0
-224,I'm looking for a visually appealing snack,0,0,0
-225,Some easy-to-prepare breakfast recipes,3,0,1
-226,Show me a dessert that looks light and fluffy,0,0,0
-227,Can you suggest a visually appealing main course?,0,0,0
-228,Give me a simple recipe for beginners,3,0,1
-229,Recipe for classic cheesecake,2,0,0
-230,Easy recipes for chicken thighs,3,0,1
-231,Guide me on making a traditional curry,2,0,0
-232,I need a dish that looks gourmet and takes 80 minutes,0,1,0
-233,I need a recipe that looks rustic and takes 70 minutes,0,1,0
-234,"What can I cook with tomatoes, garlic, and onions?",1,0,0
-235,How to prepare a traditional roast?,2,0,0
-236,I want to make a hearty stew,2,0,0
-237,Show me a quick dinner recipe,3,2,0
-238,Recipes using kale and sweet potatoes,1,0,0
-239,Show me a fast vegetarian dinner recipe,3,2,0
-240,Suggest a simple lunch recipe,3,2,0
-241,Instructions for making ramen noodles,2,0,0
-242,What can I make with ground beef and potatoes?,1,0,0
-243,Quick recipes with fish,3,2,0
-244,I want a meal that looks elegant but is quick to make,0,1,0
-245,I need a meal that looks healthy and delicious,0,0,0
-246,Show me a quick and easy breakfast recipe,3,2,0
-247,I need a recipe for a classic stew,2,0,0
-248,Show me a dish that looks elegant,0,0,0
-249,What can I make with tofu and mushrooms?,1,0,0
-250,Quick recipes for a healthy lunch,3,2,0
-251,Show me a healthy and colorful salad,0,0,0
-252,Instructions for making tiramisu,2,0,0
-253,Instructions for chocolate chip cookies,2,0,0
-254,Easy-to-make dinner recipes,3,0,1
-255,How to prepare a classic Greek salad?,2,0,0
-256,How to prepare a classic beef bourguignon?,2,0,0
-257,Instructions for making vegetable lasagna,2,0,0
-258,Suggest a dish that looks rich and takes 70 minutes,0,1,0
-259,I need a dish that looks elegant and classy,0,0,0
-260,What to cook with fish and lemon?,1,0,0
-261,Show me a colorful fruit salad,0,0,0
-262,What to cook with chickpeas and tomatoes?,1,0,0
-263,Show me recipes that look colorful and appetizing,0,0,0
-264,I'm looking for a visually appealing dish,0,0,0
-265,Show me a colorful side dish,0,0,0
-266,I want to make a hearty soup,2,0,0
-267,Instructions for making a classic burger,2,0,0
-268,I need a visually appealing brunch dish,0,0,0
-269,Give me a recipe for a colorful salad,0,0,0
-270,Show me a dish that looks rich and indulgent,0,0,0
-271,Recipes for a savory quiche with spinach,1,0,0
-272,How to make a classic lemon tart?,2,0,0
-273,Easy recipes for soup,3,0,1
-274,Quick lunch recipes with vegetables,3,2,0
-275,Quick and simple breakfast ideas,3,2,0
-276,Instructions for a classic beef stroganoff,2,0,0
-277,Recipe for classic apple pie,2,0,0
-278,How to prepare a classic Margherita pizza?,2,0,0
-279,How to make an elaborate dessert?,0,0,0
-280,What is a good recipe for a vegan dinner?,3,0,0
-281,Step-by-step to make a crème brûlée,2,0,0
-282,How to prepare a traditional jambalaya?,2,0,0
-283,Show me a recipe for a quick chicken stir-fry,3,2,0
-284,Suggest a quick and easy breakfast,3,2,0
-285,I need a simple vegetarian dish,3,0,0
-286,Instructions for making a classic bread,2,0,0
-287,Recipes using salmon and dill,1,0,0
-288,I need a recipe that looks light and healthy,0,0,0
-289,What to cook with bell peppers and tofu?,1,0,0
-290,Recipe for homemade pizza dough,2,0,0
-291,Show me a visually stunning vegan dish,0,0,0
-292,I want a meal that looks colorful and fresh,0,0,0
-293,Looking for a dish that looks rich and savory,0,0,0
-294,Show me a quick vegetarian lunch recipe,3,2,0
-295,Give me a fast and easy breakfast recipe,3,2,0
-296,Step-by-step to make beef tacos,2,0,0
-297,How to prepare paella?,2,0,0
-298,Fast and healthy breakfast ideas,3,2,0
-299,What to cook with turkey and stuffing?,1,0,0
-300,How to cook chicken tikka masala?,2,0,0
-301,I need a dish that looks fancy and takes only 30 minutes,0,1,0
-302,Easy recipes for a quick snack,3,0,1
-303,What to cook with turkey and cranberries?,1,0,0
-304,Instructions for making chicken tikka masala,2,0,0
-305,I need a dish that looks bright and fresh,0,0,0
-306,Quick breakfast ideas for busy mornings,3,2,0
-307,Easy breakfast ideas for kids,3,0,1
-308,Recipe for classic meatloaf,2,0,0
-309,Show me a dish that looks refreshing,0,0,0
-310,What to cook with beef and mushrooms?,1,0,0
-311,Instructions for making a classic meatloaf,2,0,0
-312,I need a simple dinner idea,3,0,0
-313,Recipes for a chicken and vegetable stir fry,1,0,0
-314,Give me an easy recipe for chicken parmesan,3,0,1
-315,Guide me on making a classic shepherd's pie,2,0,0
-316,What can I bake with apples and cinnamon?,1,0,0
-317,Step-by-step to make a classic beef stir-fry,2,0,0
-318,Show me a dish that looks luxurious,0,0,0
-319,Looking for recipes using sweet potatoes and kale,1,0,0
-320,How to make a classic brownie?,2,0,0
-321,Recipe for homemade scones,2,0,0
-322,Find a recipe that looks impressive,0,0,0
-323,Recipe for homemade doughnuts,2,0,0
-324,How to make a classic burger?,2,0,0
-325,Show me a dish that looks fancy,0,0,0
-326,Recipes for a beef and potato stew,1,0,0
-327,What can I cook with tofu and mushrooms?,1,0,0
-328,I'm looking for a dish that looks gourmet,0,0,0
-329,What to easy recipe cook with bacon and eggs?,1,0,1
-330,Suggest a quick lunch recipe,3,2,0
-331,Recipe for classic waffles,2,0,0
-332,Show me a quick and easy dessert recipe,3,2,0
-333,Step-by-step to make a classic tiramisu,2,0,0
-334,How to cook a traditional Greek salad?,2,0,0
-335,What to cook with beef and potatoes?,1,0,0
-336,Show me a recipe for a decadent chocolate dessert,0,0,0
-337,Step-by-step to make a classic beef chili,2,0,0
-338,I need a visually stunning appetizer,0,0,0
-339,What can I cook with chicken and spinach?,1,0,0
-340,Recipes with lentils and tomatoes,1,0,0
-341,I need a dish that looks light and airy,0,0,0
-342,Recipe for lemon meringue pie,2,0,0
-343,Easy breakfast ideas for busy mornings,3,0,1
-344,What to cook with beans and rice?,1,0,0
-345,Find a recipe that looks festive,0,0,0
-346,What to prepare with asparagus and lemon?,1,0,0
-347,What can I make with bell peppers and chicken?,1,0,0
-348,Instructions for making chicken curry,2,0,0
-349,Easy snack ideas for beginners,3,0,1
-350,I need a visually appealing soup,0,0,0
-351,I need a visually appealing dessert,0,0,0
-352,I need a dish that looks rich and hearty,0,0,0
-353,Suggest a beginner recipe for dinner,3,0,1
-354,I want to cook something green and healthy,0,0,0
-355,Quick and simple salad ideas,3,2,0
-356,Give me a beginner-friendly recipe for spaghetti,3,0,1
-357,Give me a simple and quick lunch recipe,3,2,0
-358,Recipe for homemade gnocchi,2,0,0
-359,I need a recipe that looks fresh and light,0,0,0
-360,Dishes using shrimp and avocado,1,0,0
-361,Recipe for homemade vegetable stir-fry,2,0,0
-362,I want to make a traditional pie,2,0,0
-363,Quick dinner ideas for beginners,3,2,1
-364,Show me a dish that looks rich and hearty,0,0,0
-365,What to cook with bacon and eggs in under 20 minutes?,1,1,0
-366,Show me how to cook a dish that looks fancy,0,0,0
-367,How to make a simple chicken noodle soup,2,0,0
-368,Show me a dish that looks simple yet elegant,0,0,0
-369,How to make a traditional tiramisu?,2,0,0
-370,What to cook with pork and beans?,1,0,0
-371,Suggestions for visually appealing desserts,0,0,0
-372,Show me a dessert that looks luxurious and rich,0,0,0
-373,Quick breakfast recipes for busy mornings,3,2,0
-374,How to make a simple quiche?,2,0,0
-375,I want a quick breakfast option,3,2,0
-376,I need a recipe for a classic roast chicken,2,0,0
-377,Recipe for homemade sushi,2,0,0
-378,What to cook with lamb and mint?,1,0,0
+184,What to cook with ground beef and tomatoes?,1,0,0
+185,Tomato soup,2,0,0
+186,What can I make with eggs and bell peppers?,1,0,0
+187,I want to make a hearty soup,2,0,0
+188,How to prepare a classic Greek salad?,2,0,0
+189,Looking for a visually stunning dinner,0,0,0
+190,How to king crab bisque?,2,0,0
+191,Couscous speedy simple,2,2,1
+192,Snack quick,3,2,0
+193,How to cook a traditional Greek salad?,2,0,0
+194,Simple lunch ideas for busy days,3,0,1
+195,Fast and healthy breakfast ideas,3,2,0
+196,Recipes for a chicken pot pie,1,0,0
+197,What can I prepare with chicken and broccoli?,1,0,0
+198,Show me a dish that looks fancy but is easy to make,0,1,0
+199,What can I cook with chicken and bell peppers?,1,0,0
+200,I want to make a classic bolognese sauce,2,0,0
+201,Give me a simple recipe for beginners,3,0,1
+202,Show me a dessert that looks rich and creamy,0,0,0
+203,I need a dish that looks rich and takes 75 minutes,0,1,0
+204,What can I bake with apples and oats?,1,0,0
+205,What can I cook with zucchini and cheese?,1,0,0
+206,What can I prepare with fish and lemon?,1,0,0
+207,Suggestions for a quick and tasty dinner,3,2,0
+208,Show me a recipe for a quick chicken stir-fry,3,2,0
+209,Show me something that looks light and tasty,0,0,0
+210,Paella,2,0,0
+211,I want to make a hearty chili,2,0,0
+212,Show me something that looks decadent,0,0,0
+213,Grilled cheese easy,2,0,1
+214,Quick and simple breakfast ideas,3,2,0
+215,I need a recipe for breakfast muffins,2,0,0
+216,What can I cook with rice and beans?,1,0,0
+217,"What can I cook with tomatoes, garlic, and onions?",1,0,0
+218,Can you suggest a visually appealing dessert?,0,0,0
+219,Give me a recipe that looks appetizing,0,0,0
+220,What is a good recipe for a paleo dinner?,3,0,0
+221,How to make a simple quiche?,2,0,0
+222,Pork tenderloin easy,2,0,1
+223,Looking for a visually appealing dinner dish,0,0,0
+224,Brunch beginner,3,0,1
+225,Easy recipes for pasta,3,0,1
+226,Show me a dessert that looks luxurious and rich,0,0,0
+227,Snack,3,0,0
+228,Fast dessert options,3,2,0
+229,Lamb tagine quick,2,2,0
+230,Quick recipes for a quick lunch,3,2,0
+231,Find me a dish that looks creamy and indulgent,0,0,0
+232,How to make a classic BLT?,2,0,0
+233,Recipe for classic apple pie,2,0,0
+234,Dinner,3,0,0
+235,I want to cook a dish that's visually appealing,0,0,0
+236,How to make sushi?,2,0,0
+237,Curry chicken easy,2,0,1
+238,How to prepare a traditional Greek salad?,2,0,0
+239,Instructions for making chicken tikka masala,2,0,0
+240,Spicy tofu stir-fry guide,2,0,0
+241,Recipes with lentils and spinach,1,0,0
+242,What to cook with beef and potatoes?,1,0,0
+243,What can I make with turkey and cranberries?,1,0,0
+244,Looking for a visually appealing smoothie bowl,0,0,0
+245,Show me a recipe for homemade bread,2,0,0
+246,Fast quinoa beet salad,2,2,0
+247,Simple snacks to prepare,3,0,1
+248,Tomato soup under 20 simple,2,1,1
+249,What to cook with lentils and spinach?,1,0,0
+250,Easy recipes for soup,3,0,1
+251,I need a visually appealing dish for dinner,0,0,0
+252,I need a recipe that looks gourmet,0,0,0
+253,I want a meal that looks colorful and fresh,0,0,0
+254,Brunch fast beginner,3,2,1
+255,Recipes quick easy,3,2,1
+256,What to cook with bacon and cheese?,1,0,0
+257,How to make a classic cheesecake?,2,0,0
+258,Recipe for homemade bagels,2,0,0
+259,I need a quick snack recipe,3,2,0
+260,Tomato soup simple,2,0,1
+261,Fish tacos quick,2,2,0
+262,Stuffed peppers quick,2,2,0
+263,Give me a recipe that looks light and fresh,0,0,0
+264,Instructions for making a simple pasta dish,2,0,0
+265,What to cook with bacon and eggs in a short amount of time?,1,2,0
+266,I need a recipe that looks elegant but is quick to make,0,0,0
+267,Garlic prawns steps,2,0,0
+268,Breakfast,3,0,0
+269,Show me a quick and easy dessert recipe,3,2,0
+270,What can I cook with chickpeas and kale?,1,0,0
+271,I'm looking for a visually appealing dish,0,0,0
+272,Easy-to-make breakfast ideas,3,0,1
+273,What to cook with chicken and green beans?,1,0,0
+274,How to prepare a traditional roast?,2,0,0
+275,Find me a dessert that looks elegant,0,0,0
+276,Looking for visually appealing salad recipes,0,0,0
+277,Gazpacho,2,0,0
+278,Suggest a visually appealing dish,0,0,0
+279,Find a recipe for a meal that looks festive and takes 45 minutes,0,1,0
+280,I need a recipe for a classic roast chicken,2,0,0
+281,Find a recipe for a meal that looks festive and takes 90 minutes,0,1,0
+282,How to bake a vanilla cake?,2,0,0
+283,Instructions for making garlic bread,2,0,0
+284,Quiche Lorraine simple,2,0,1
+285,Grilled veggies steps,2,0,0
+286,What dishes can I prepare with eggplant and bell peppers?,1,0,0
+287,How to prepare risotto?,2,0,0
+288,Recipe for classic blueberry muffins,2,0,0
+289,Show me recipes for a healthy lunch,3,0,0
+290,"Looking for a light, colorful salad",0,0,0
+291,Can you suggest a visually appealing main course?,0,0,0
+292,Show me a hearty breakfast recipe,3,2,0
+293,Chicken burger,2,0,0
+294,I need a recipe for a dish that looks festive,0,0,0
+295,What can I make with asparagus and prosciutto?,1,0,0
+296,Spaghetti,2,0,0
+297,I need a dish that looks bright and fresh,0,0,0
+298,Recipes using sweet potatoes and spinach,1,0,0
+299,Quick and easy lunch ideas,3,2,0
+300,Suggest a quick and easy dinner,3,2,0
+301,Quick lunch ideas for work,3,2,0
+302,Recipes using spinach and ricotta,1,0,0
+303,How do I prepare a vegan lasagna?,2,0,0
+304,Recipe for homemade tomato soup,2,0,0
+305,What can I bake with chocolate and raspberries?,1,0,0
+306,What to prepare with shrimp and rice?,1,0,0
+307,Speedy dinners,3,2,0
+308,Fast and healthy dinner ideas,3,2,0
+309,Instructions for making classic spaghetti and meatballs,2,0,0
+310,Step-by-step to make cheesecake,2,0,0
+311,What can I cook with scallops and lemon?,1,0,0
+312,Cuisine under 30 beginner,3,1,1
+313,I need a meal that looks fresh and delicious,0,0,0
+314,What can I bake with pears and walnuts?,1,0,0
+315,Step-by-step to make a classic vegetable stir-fry,2,0,0
+316,Show me a recipe for a stunning cake,0,0,0
+317,What can I make with rice and beans?,1,0,0
+318,How to make a traditional tiramisu?,2,0,0
+319,Easy snack recipes for beginners,3,0,1
+320,What to cook with bell peppers and tofu?,1,0,0
+321,What to cook for dinner that takes less than 30 minutes?,3,1,0
+322,Show me a dessert that looks light and fluffy,0,0,0
+323,Show me a recipe that looks nutritious,0,0,0
+324,How to prepare paella?,2,0,0
+325,How to cook a hearty stew?,2,0,0
+326,I want to cook something vibrant and colorful,0,0,0
+327,Breakfast easy,3,0,1
+328,Instructions for a classic meatloaf,2,0,0
+329,Show me a dish that looks hearty and satisfying,0,0,0
+330,Quick vegetarian dinner ideas,3,2,0
+331,Caramel custard guide,2,0,0
+332,Quick and healthy lunch recipes,3,2,0
+333,Recipe for a traditional Japanese ramen,2,0,0
+334,Show me a recipe for a beautiful appetizer,0,0,0
+335,Looking for a dessert that looks light and airy,0,0,0
+336,I need a recipe that looks light and healthy,0,0,0
+337,Instructions for making a classic cheesecake,2,0,0
+338,Instructions for making panna cotta,2,0,0
+339,Berry pavlova easy,2,0,1
+340,I need a recipe that looks healthy and fresh,0,0,0
+341,Some easy-to-prepare dessert recipes,3,0,1
+342,What to cook with turkey and quinoa?,1,0,0
+343,What to cook with chicken and mushrooms?,1,0,0
+344,Find me a dish that looks elegant and sophisticated,0,0,0
+345,I want a meal that looks elegant and sophisticated,0,0,0
+346,Suggest a beginner recipe for lunch,3,0,1
+347,Show me a recipe for a colorful salad,0,0,0
+348,Vegetable stir-fry speedy,2,2,0
+349,What to cook with fish and lemon?,1,0,0
+350,Guide me on making a traditional shepherd's pie,2,0,0
+351,What can I bake with chocolate and pecans?,1,0,0
+352,Step-by-step to make a classic apple pie,2,0,0
+353,Instructions for making a classic soup,2,0,0
+354,I want to make a traditional pie,2,0,0
+355,Step-by-step to make a classic chicken soup,2,0,0
+356,Recipe for homemade ravioli,2,0,0
+357,I need a dish with carrots and chickpeas,1,0,0
+358,Instructions for making a vegetable stir-fry,2,0,0
+359,I want to make something that looks colorful,0,0,0
+360,Venison stew quick,2,2,0
+361,Can you suggest a colorful dessert?,0,0,0
+362,How do I prepare a traditional paella?,2,0,0
+363,Recipes using salmon and dill,1,0,0
+364,Easy-to-prepare lunch recipes,3,0,1
+365,Instructions for making chicken parmigiana,2,0,0
+366,I want a quick breakfast option,3,2,0
+367,Quick and easy dinner ideas for busy nights,3,2,0
+368,Some easy-to-make dinner recipes,3,0,1
+369,Some easy-to-prepare brunch recipes,3,0,1
+370,Falafel quick easy,2,2,1
+371,Suggest a dish that looks rich and takes 70 minutes,0,1,0
+372,Instructions for making risotto,2,0,0
+373,Instructions for making bruschetta,2,0,0
+374,Some easy-to-prepare dinner recipes,3,0,1
+375,Ideas for a savory dish with beans and rice,1,0,0
+376,Quick recipes for a healthy lunch,3,2,0
+377,Recipes for a sweet potato casserole,1,0,0
+378,Seafood chowder fast easy,2,2,1
 379,Recipe for homemade falafel,2,0,0
-380,How do I make a perfect beef bourguignon?,2,0,0
-381,What to cook with bacon and eggs?,1,0,0
-382,What can I bake with bananas and walnuts?,1,0,0
-383,Show me a quick and nutritious lunch recipe,3,2,0
-384,Quick dinner recipes with pork,3,2,0
-385,I need a recipe that looks healthy and fresh,0,0,0
-386,"I'm looking for a light, colorful salad",0,0,0
-387,What can I cook with pork and apples?,1,0,0
-388,I want to make something that looks elegant,0,0,0
-389,Instructions for making panna cotta,2,0,0
-390,Easy-to-make lunch recipes,3,0,1
-391,Quick recipes with turkey,3,2,0
-392,Easy snack recipes for kids,3,0,1
-393,I'd like a recipe that looks gourmet but is easy to make,0,0,0
-394,What can I bake with bananas and oats?,1,0,0
-395,I want to make something that looks colorful,0,0,0
-396,Step-by-step to make lasagna,2,0,0
-397,How to cook a classic meatloaf?,2,0,0
-398,Recipes using bell peppers and quinoa,1,0,0
-399,What to cook for dinner that takes less than 30 minutes?,3,1,0
-400,Show me a dish that looks delicious,0,0,0
-401,Instructions for making fettuccine alfredo,2,0,0
-402,Show me a dessert that looks rich and creamy,0,0,0
-403,I want a meal that looks colorful and healthy,0,0,0
-404,Quick dinner ideas for busy nights,3,2,0
-405,Looking for an easy salad recipe,3,0,1
-406,What to prepare with salmon and asparagus?,1,0,0
-407,Instructions for making classic chicken Alfredo,2,0,0
-408,I need a recipe that looks fresh and delicious,0,0,0
-409,I want to cook a dish that looks vibrant and colorful,0,0,0
-410,How do I make a visually appealing fruit salad?,0,0,0
-411,Instructions for making a classic salad,2,0,0
-412,Quick and easy dinner ideas for busy nights,3,2,0
-413,How do I make a perfect beef Wellington?,2,0,0
-414,How to make a classic chocolate cake?,2,0,0
-415,I need a dish that looks vibrant,0,0,0
-416,What to cook with spinach and feta?,1,0,0
-417,What can I make with rice and beans?,1,0,0
-418,Find a recipe that looks visually stunning,0,0,0
-419,What to prepare with broccoli and cheese?,1,0,0
-420,How to make a classic crème brûlée?,2,0,0
-421,How to make a visually appealing salad,0,0,0
-422,Quick and easy appetizer ideas,3,2,0
-423,What can I make with asparagus and prosciutto?,1,0,0
-424,What can I cook with chicken and bell peppers?,1,0,0
-425,Suggestions for visually appealing main courses,0,0,0
-426,Step-by-step to make a classic apple pie,2,0,0
-427,Looking for visually appealing appetizers,0,0,0
-428,How to make a classic pancake?,2,0,0
-429,How to prepare a traditional gumbo?,2,0,0
-430,I want to cook something that looks rich and creamy,0,0,0
-431,I need a quick dinner recipe,3,2,0
-432,I need a recipe that looks healthy and vibrant,0,0,0
-433,What dishes can I make with zucchini and squash?,1,0,0
-434,Recipes for a savory pie with cheese,1,0,0
-435,Quick recipes for a healthy dinner,3,2,0
-436,I need a visually appealing salad,0,0,0
-437,I'd like a recipe that looks rustic but is easy to make,0,0,0
-438,Step-by-step to make a classic panna cotta,2,0,0
-439,Show me a hearty breakfast recipe,3,2,0
-440,I want a meal that looks colorful and vibrant,0,0,0
-441,Easy-to-make dinner recipes for beginners,3,0,1
-442,How do I prepare a traditional paella?,2,0,0
-443,Show me a healthy snack recipe,3,0,0
-444,How to cook a traditional shepherd's pie?,2,0,0
-445,Recipes for a cozy dinner,3,0,0
-446,I need a recipe that looks light and refreshing,0,0,0
-447,I'm looking for a healthy and vibrant salad recipe,0,0,0
-448,What can I cook with shrimp and rice?,1,0,0
-449,Recipes with quinoa and vegetables,1,0,0
-450,Instructions for a classic lobster bisque,2,0,0
-451,I want a meal that looks elegant and sophisticated,0,0,0
-452,I'm looking for a creamy and delicious dish,0,0,0
-453,"What can I make with chicken, spinach, and cheese?",1,0,0
-454,I want a recipe that looks fresh and healthy,0,0,0
-455,Some easy-to-prepare dessert recipes,3,0,1
-456,How to prepare a simple chicken stir-fry,2,0,1
-457,Recipe for classic fried chicken,2,0,0
-458,Fast and easy dinner ideas,3,2,0
-459,Easy-to-make breakfast ideas,3,0,1
-460,Instructions for making a classic roast,2,0,0
-461,What to cook with chicken and broccoli?,1,0,0
-462,Suggest a visually appealing dish,0,0,0
-463,What to cook with ground beef and tomatoes?,1,0,0
-464,I'm looking for a dish that looks colorful,0,0,0
-465,Show me a recipe for a stunning cake,0,0,0
-466,Suggest a quick dinner recipe,3,2,0
-467,What can I cook with eggplant and lentils?,1,0,0
-468,"Show me a recipe for a light, refreshing salad",0,0,0
-469,I'd like a recipe that looks fancy but is beginner-friendly,0,0,1
-470,Guide me on making a traditional minestrone,2,0,0
-471,Can you recommend a dish with kale and chickpeas?,1,0,0
-472,Recipes for a savory tart with mushrooms,1,0,0
-473,Quick recipes with chicken,3,2,0
-474,Show me a recipe for a beautiful drink,0,0,0
-475,Instructions for making chocolate mousse,2,0,0
-476,I want to make a classic bolognese sauce,2,0,0
-477,Show me something that looks light and airy,0,0,0
-478,Guide to making a traditional shepherd's pie,2,0,0
-479,Instructions for making crispy fried chicken,2,0,0
-480,Show me a recipe for a quick and delicious dinner,3,2,0
-481,Give me a beginner recipe for pancakes,3,0,1
-482,Instructions for making fluffy waffles,2,0,0
-483,Looking for a visually stunning dinner,0,0,0
-484,I need a recipe that looks delicate,0,0,0
-485,What can I bake with berries and cream?,1,0,0
-486,What to prepare with cabbage and pork?,1,0,0
-487,Guide me on making a traditional risotto,2,0,0
-488,Show me quick lunch recipes,3,2,0
-489,Show me a recipe for a visually appealing salad,0,0,0
-490,How to prepare a traditional Greek salad?,2,0,0
-491,What to cook with chicken and green beans?,1,0,0
-492,How do I make a perfect omelette?,2,0,0
-493,Show me a dessert that looks light and airy,0,0,0
-494,Instructions for making a classic cheesecake,2,0,0
-495,What can I cook with eggplant and tomatoes?,1,0,0
-496,Suggestions for a visually appealing dessert,0,0,0
-497,Recipes using zucchini and cheese,1,0,0
-498,What can I bake with apples and oats?,1,0,0
-499,How do I make a beef Wellington?,2,0,0
-500,Show me how to cook paella,2,0,0
-501,Show me how to make tiramisu,2,0,0
-502,Show me a recipe for a beautiful cake,0,0,0
-503,How to prepare a traditional chicken curry?,2,0,0
-504,Recipe for spaghetti carbonara,2,0,0
-505,Recipes with broccoli and tofu,1,0,0
-506,Step-by-step to make mac and cheese,2,0,0
-507,Recipes for a simple vegetarian dinner,3,0,1
-508,Instructions for making a vegetable stir-fry,2,0,0
-509,What can I prepare with shrimp and garlic?,1,0,0
-510,Instructions for a classic Caesar salad,2,0,0
-511,Give me an easy-to-make pasta recipe,3,0,1
-512,Suggest an easy soup recipe,3,0,1
-513,Tell me how to make a traditional carbonara,2,0,0
-514,I want to make a dish that looks appetizing,0,0,0
-515,Recipe for homemade vegetable soup,2,0,0
-516,Quick lunch recipes for busy days,3,2,0
-517,Looking for a dish that looks colorful and fresh,0,0,0
-518,Quick and easy dessert ideas,3,2,0
-519,Easy snack ideas for a party,3,0,1
-520,Show me a recipe for a quick and healthy dinner,3,2,0
-521,I want to make something that looks mouthwatering,0,0,0
-522,I want to cook something that looks healthy,0,0,0
-523,Give me a recipe that looks light and fresh,0,0,0
-524,How to cook a delicious steak,2,0,0
-525,I need a recipe that looks elegant but is quick to make,0,0,0
-526,Looking for a light and refreshing appetizer,0,0,0
-527,What can I cook with beef and carrots?,1,0,0
-528,Step-by-step to make a classic vegetable stir-fry,2,0,0
-529,Find me a dish that looks appetizing and healthy,0,0,0
-530,I want to make a basic tomato sauce,2,0,0
-531,Show me a recipe that looks nutritious,0,0,0
-532,Recipe for classic blueberry muffins,2,0,0
-533,What can I bake with chocolate and raspberries?,1,0,0
-534,Suggest an easy dinner recipe,3,0,1
-535,Looking for a visually appealing main course,0,0,0
-536,Suggest a dish that looks festive and takes 60 minutes,0,1,0
-537,"I'm looking for an easy, visually appealing snack",0,0,0
-538,Quick lunch ideas,3,2,0
-539,Quick and healthy lunch recipes,3,2,0
-540,Suggest a quick snack recipe,3,2,0
-541,What to prepare with eggplant and tomatoes?,1,0,0
-542,Quick recipes with beef,3,2,0
-543,Looking for visually appealing side dishes,0,0,0
-544,How to make a classic beef wellington?,2,0,0
-545,Recipe for beef stroganoff,2,0,0
-546,Recipes using cauliflower and turmeric,1,0,0
-547,How to prepare a traditional shakshuka?,2,0,0
-548,How do I prepare a vegan lasagna?,2,0,0
-549,Easy-to-prepare brunch ideas,3,0,1
-550,What to prepare with sweet potatoes and cinnamon?,1,0,0
-551,How to make risotto,2,0,0
-552,Instructions for making classic spaghetti and meatballs,2,0,0
-553,Find me a dessert that looks light and airy,0,0,0
-554,I need a visually appealing main course,0,0,0
-555,What can I make with chicken and mushrooms?,1,0,0
-556,What to cook with chickpeas and kale?,1,0,0
-557,What can I make with pork and apples?,1,0,0
-558,Show me a recipe for a beautiful appetizer,0,0,0
-559,Quick recipes for a quick lunch,3,2,0
-560,What dishes can I prepare with eggplant and bell peppers?,1,0,0
-561,I need a recipe that looks simple but elegant,0,0,0
-562,What can I prepare with fish and potatoes?,1,0,0
-563,I'm looking for something that looks creamy and takes 45 minutes,0,1,0
-564,What can I make with chicken and zucchini?,1,0,0
-565,I need a recipe for a delicious fruit tart,2,0,0
-566,I want a dessert that looks beautiful,0,0,0
-567,What can I prepare with shrimp and avocado?,1,0,0
-568,Find me a dish that looks elegant and sophisticated,0,0,0
-569,Can I get a recipe for a hearty vegetable soup?,2,0,0
-570,What can I make with kale and quinoa?,1,0,0
-571,What to cook with salmon and asparagus?,1,0,0
-572,Recipe for homemade pancakes,2,0,0
-573,I need a visually appealing dish for dinner,0,0,0
-574,Quick recipes for lunch,3,2,0
-575,I need a recipe that looks impressive but is quick to make,0,0,1
-576,I want to cook a dish that's visually appealing,0,0,0
-577,I need a recipe that looks impressive but is fast to make,0,0,1
-578,How to bake a vanilla cake?,2,0,0
-579,Give me a recipe that looks festive,0,0,0
-580,What to prepare with shrimp and rice?,1,0,0
-581,Recipes using asparagus and lemon,1,0,0
-582,I need a recipe that looks gourmet but is easy to make,0,0,0
-583,Give me a recipe that looks elegant,0,0,0
-584,How to make a classic Greek salad?,2,0,0
-585,Instructions for making sushi rolls,2,0,0
-586,I need something quick for lunch,3,2,0
-587,Recipe for homemade pizza,2,0,0
-588,Instructions for making homemade granola,2,0,0
-589,What to cook with carrots and peas?,1,0,0
-590,How do I make a perfect chicken piccata?,2,0,0
-591,Recipes for a beef and barley stew,1,0,0
-592,Find a recipe that looks colorful and fun,0,0,0
-593,How to make a traditional mousse?,2,0,0
-594,What to cook with shrimp and rice?,1,0,0
-595,Recipe for banana bread,2,0,0
-596,Looking for visually appealing salad recipes,0,0,0
-597,What can I cook with beef and broccoli?,1,0,0
-598,What can I prepare with quinoa and tomatoes?,1,0,0
-599,Recipe for classic brownies,2,0,0
-600,Suggest a breakfast recipe under 15 minutes,3,1,0
-601,Show me a dish that looks fancy but is easy to make,0,1,0
-602,What can I cook with shrimp and corn?,1,0,0
-603,Find a recipe for a meal that looks festive and takes 90 minutes,0,1,0
-604,I want a dessert recipe that looks festive,0,0,0
-605,Instructions for making chicken parmigiana,2,0,0
-606,Suggest a dish that looks fancy,0,0,0
-607,"Looking for a refreshing, visually appealing drink",0,0,0
-608,Find me a dessert that looks elegant,0,0,0
-609,How to make chicken tikka masala?,2,0,0
-610,Instructions for a classic meatloaf,2,0,0
-611,Give me a beginner recipe for pasta,3,0,1
-612,What can I make with potatoes and carrots?,1,0,0
-613,How to cook carbonara?,2,0,0
-614,Recipes using beans and tomatoes,1,0,0
-615,What can I prepare with eggs and spinach?,1,0,0
-616,Recipe for homemade lasagna,2,0,0
-617,What can I bake with strawberries and cream?,1,0,0
-618,I want to cook something that looks satisfying,0,0,0
-619,Show me a recipe for a beautiful salad,0,0,0
-620,How to make a classic Caesar salad?,2,0,0
-621,Step-by-step to make chicken curry,2,0,0
-622,How do I make beef stroganoff?,2,0,0
-623,Instructions for making fluffy pancakes,2,0,0
-624,What to cook with bacon and mushrooms?,1,0,0
-625,How to prepare a delicious vegetable curry,2,0,0
-626,I'm looking for a dish that looks festive,0,0,0
-627,Step-by-step to make a classic chicken curry,2,0,0
-628,How to prepare a traditional shepherd's pie?,2,0,0
-629,I want a meal that looks healthy and vibrant,0,0,0
-630,How to prepare a classic beef stew?,2,0,0
-631,I need a meal that looks fresh and healthy,0,0,0
-632,Looking for a visually appealing appetizer,0,0,0
-633,What can I prepare with chickpeas and kale?,1,0,0
-634,What to cook with chicken and mushrooms?,1,0,0
-635,Quick and easy brunch ideas,3,2,0
-636,Easy-to-prepare lunch ideas,3,0,1
-637,I want to make a classic bread,2,0,0
-638,Quick and easy recipes for dinner,3,2,0
-639,What can I cook with chicken and broccoli?,1,0,0
-640,"Looking for a light, colorful salad",0,0,0
-641,Quick dinner ideas,3,2,0
-642,What to cook with tuna and beans?,1,0,0
-643,How to cook a simple frittata?,2,0,0
-644,Give me instructions for making chicken curry,2,0,0
-645,What can I cook with chickpeas and kale?,1,0,0
-646,I need a dish that looks luxurious,0,0,0
-647,Guide me on preparing a traditional ramen,2,0,0
-648,What can I bake with apples and walnuts?,1,0,0
-649,Recipes with sweet potatoes and kale,1,0,0
-650,I'm looking for a dish that looks elegant,0,0,0
-651,Quick lunch ideas for busy days,3,2,0
-652,What to cook with pork and apples?,1,0,0
-653,I need a dish that looks refreshing,0,0,0
-654,What can I bake with almonds and honey?,1,0,0
-655,Give me an easy-to-cook curry recipe,3,0,1
-656,What can I bake with cherries and almonds?,1,0,0
-657,What can I cook with beef and potatoes?,1,0,0
-658,I want a meal that looks healthy and delicious,0,0,0
-659,How to make a classic cheesecake?,2,0,0
-660,Show me a beginner recipe for a casserole,3,0,1
-661,Quick recipes with pork,3,2,0
-662,Quick breakfast ideas for beginners,3,2,1
-663,Show me a recipe for a quick and healthy lunch,3,2,0
-664,Show me a quick and easy brunch recipe,3,2,0
-665,What can I prepare with lentils and spinach?,1,0,0
-666,Give me a recipe that looks appetizing,0,0,0
-667,Suggest a fast breakfast recipe,3,2,0
-668,I need a dish that looks festive and takes 100 minutes,0,1,0
-669,Give me a recipe that looks nutritious,0,0,0
-670,I need a visually appealing brunch recipe,0,0,0
-671,"I'm looking for an easy, visually appealing dessert",0,0,0
-672,What can I make with pork and potatoes?,1,0,0
-673,Looking for a dessert that looks light and airy,0,0,0
-674,Give me an easy recipe for vegetable stir-fry,3,0,1
-675,I need a simple pasta dish for beginners,3,0,1
-676,What can I cook with spinach and ricotta?,1,0,0
-677,Recipe for homemade ravioli,2,0,0
-678,Instructions for making a classic soup,2,0,0
-679,How to prepare a classic chicken curry?,2,0,0
-680,Show me a dish that looks rich,0,0,0
-681,Quick lunch ideas for work,3,2,0
-682,Show me something that looks vibrant and colorful,0,0,0
-683,I need a recipe for a simple stir fry,2,0,0
-684,Recipe for homemade tomato soup,2,0,0
-685,Can you recommend a dish that looks elegant?,0,0,0
-686,Suggest a quick and easy dinner,3,2,0
-687,How to prepare a traditional risotto?,2,0,0
-688,Step-by-step to make a traditional curry,2,0,0
-689,What can I bake with berries and almonds?,1,0,0
-690,What can I make with cauliflower and cheese?,1,0,0
-691,I need a recipe that looks sophisticated,0,0,0
-692,Looking for a visually appealing seafood dish,0,0,0
-693,Find a recipe that looks fancy and elegant,0,0,0
-694,Can you suggest a colorful side dish?,0,0,0
-695,What can I prepare with lentils and carrots?,1,0,0
-696,Find me a dessert that looks rich and decadent,0,0,0
-697,What to cook with beef and carrots?,1,0,0
-698,Recipe for chocolate lava cake,2,0,0
-699,I'm looking for a recipe that's visually stunning,0,0,0
-700,I want to make a basic tomato soup,2,0,0
-701,Recipes with tofu and mushrooms,1,0,0
-702,Guide me on making a traditional jambalaya,2,0,0
-703,What can I make with quinoa and vegetables?,1,0,0
-704,What can I bake with chocolate and pecans?,1,0,0
-705,What can I make with potatoes and onions?,1,0,0
-706,I need a recipe that looks festive,0,0,0
-707,What to cook with duck and oranges?,1,0,0
-708,How to prepare a delicious chicken curry,2,0,0
-709,Looking for a visually appealing dessert,0,0,0
-710,Suggest a visually appealing salad,0,0,0
-711,What can I prepare with fish and lemon?,1,0,0
-712,Give me a beginner's guide to baking,3,0,1
-713,Find me a dish that looks like a gourmet meal,0,0,0
-714,Quick lunch recipes for busy workdays,3,2,0
-715,Show me a recipe for a simple yet delicious pasta dish,2,0,0
-716,Show me a recipe for homemade bread,2,0,0
-717,Instructions for making ramen,2,0,0
-718,Quick and simple recipes for lunch,3,2,0
-719,I need a dish that looks fancy,0,0,0
-720,Show me a dish that looks light and fresh,0,0,0
-721,I need a quick snack recipe,3,2,0
-722,Quick and healthy breakfast ideas,3,2,0
-723,Suggestions for a visually appealing main course,0,0,0
-724,Find a recipe for a meal that looks festive and takes 45 minutes,0,1,0
-725,Quick breakfast ideas,3,2,0
-726,What can I prepare with beef and peppers?,1,0,0
-727,I need a dessert that looks luxurious,0,0,0
-728,Give me a recipe for a colorful smoothie bowl,0,0,0
-729,Recipes using beans and corn,1,0,0
-730,How to make a classic sandwich?,2,0,0
-731,Show me a light and fresh dinner recipe,3,0,0
-732,Easy dinner ideas with pasta,3,0,1
-733,I want to bake something that looks festive,0,0,0
-734,Show me a dish that looks hearty and satisfying,0,0,0
-735,Can you suggest a visually appealing soup?,0,0,0
-736,How to prepare a classic ratatouille?,2,0,0
-737,I need a recipe that looks delicate and takes 60 minutes,0,1,0
-738,What to cook with chicken and tomatoes?,1,0,0
-739,Instructions for making beef tacos,2,0,0
-740,What can I prepare with bell peppers and tofu?,1,0,0
-741,Step-by-step to make a classic beef wellington,2,0,0
-742,Easy recipes for dinner,3,0,1
-743,Step-by-step to make a classic chicken soup,2,0,0
-744,Quick and healthy lunch ideas,3,2,0
-745,Quick and easy lunch recipes,3,2,0
-746,Recipes for a savory quiche with mushrooms,1,0,0
-747,Give me an easy recipe for chicken noodle soup,3,0,1
-748,Suggest some easy-to-make lunch recipes,3,0,1
-749,Instructions for a traditional carbonara,2,0,0
-750,Quick vegetarian recipes,3,2,0
-751,Show me a salad that looks vibrant and fresh,0,0,0
-752,What can I cook with shrimp and pasta?,1,0,0
-753,How to prepare a classic vegetable soup?,2,0,0
-754,How to make a classic BLT?,2,0,0
-755,Show me a fast and healthy dinner recipe,3,2,0
-756,Recipe for homemade bread,2,0,0
-757,I need a recipe for a dish that looks festive,0,0,0
-758,What can I cook with zucchini and cheese?,1,0,0
-759,What to cook with bell peppers and ground beef?,1,0,0
-760,How to make a classic French onion soup?,2,0,0
-761,Step-by-step to make a classic French toast,2,0,0
-762,Suggest some easy-to-make dinner recipes,3,0,1
-763,How to cook a hearty stew?,2,0,0
-764,Suggest a beginner recipe for lunch,3,0,1
-765,Instructions for making baklava,2,0,0
-766,Show me a recipe for a beautiful dessert,0,0,0
-767,Show me a dinner recipe that's easy to make,3,0,1
-768,What can I make with shrimp and asparagus?,1,0,0
-769,Looking for a visually appealing brunch idea,0,0,0
-770,What to cook with lentils and spinach?,1,0,0
-771,Can you suggest a visually appealing main dish?,0,0,0
-772,I need a dish that looks festive,0,0,0
-773,What's a good recipe for a hearty stew?,3,0,0
-774,Looking for a visually appealing dinner dish,0,0,0
-775,I need a dish that looks rustic,0,0,0
-776,Some easy-to-make dinner recipes,3,0,1
-777,What can I bake with pears and cinnamon?,1,0,0
-778,Can you suggest a visually appealing dessert?,0,0,0
-779,Guide to making a traditional minestrone soup,2,0,0
-780,How to make a traditional panna cotta?,2,0,0
-781,Show me something that looks decadent,0,0,0
-782,What to prepare with tomatoes and basil?,1,0,0
-783,Step-by-step to make cheesecake,2,0,0
-784,Can I have a recipe for a hearty stew?,2,0,0
-785,Instructions for making a classic pad Thai,2,0,0
-786,Recipe for a classic Italian risotto,2,0,0
-787,I want to cook something that looks fresh and colorful,0,0,0
-788,I want to cook something that looks refreshing,0,0,0
-789,Show me a recipe for a quick and healthy breakfast,3,2,0
-790,How to make a traditional French toast?,2,0,0
-791,How to cook chicken parmesan?,2,0,0
-792,Quick dinner ideas with beef,3,2,0
-793,Show me a recipe for a vibrant smoothie,0,0,0
-794,I need a recipe that looks appealing and tasty,0,0,0
-795,What can I cook with sweet potatoes and black beans?,1,0,0
-796,Show me recipes for a nutritious breakfast,3,0,0
-797,I need a dish that looks exquisite,0,0,0
-798,Recipes for pasta with tomatoes and garlic,1,0,0
-799,Instructions for a classic fish and chips,2,0,0
-800,Recipes using chicken and broccoli,1,0,0
-801,Show me a dessert that looks elegant and sophisticated,0,0,0
-802,Instructions for a classic bolognese,2,0,0
-803,Suggest a simple and quick dinner,3,2,0
-804,Can you suggest a colorful dessert?,0,0,0
-805,Looking for a visually appealing side dish,0,0,0
-806,Instructions for making a simple pasta dish,2,0,0
-807,Show me a recipe for an easy dessert,3,0,1
-808,Quick dinner recipes for busy nights,3,2,0
+380,Beef tacos beginner,2,0,1
+381,Recipes with tofu and bell peppers,1,0,0
+382,I'd like a recipe that looks rustic but is easy to make,0,0,0
+383,Recipe for homemade vegetable stir-fry,2,0,0
+384,What can I bake with bananas and walnuts?,1,0,0
+385,How to make a classic lemon tart?,2,0,0
+386,Simple vegan dishes,3,0,1
+387,How to prepare a classic French toast?,2,0,0
+388,Breakfast quick easy,3,2,1
+389,I need a dish that looks exquisite,0,0,0
+390,What to prepare with tomatoes and basil?,1,0,0
+391,What to cook with salmon and asparagus?,1,0,0
+392,Quick and easy appetizer ideas,3,2,0
+393,Recipes using kale and sweet potatoes,1,0,0
+394,Instructions for making homemade granola,2,0,0
+395,Mango chutney easy,2,0,1
+396,I need a dish that looks sumptuous,0,0,0
+397,Instructions for making a classic pad Thai,2,0,0
+398,Give me a recipe for a vibrant smoothie,0,0,0
+399,Give me a beginner recipe for pasta,3,0,1
+400,What can I prepare with shrimp and avocado?,1,0,0
+401,How to prepare a traditional gumbo?,2,0,0
+402,Lamb shank under 45,2,1,0
+403,Fish tacos easy,2,0,1
+404,Instructions for a classic French onion soup,2,0,0
+405,Step-by-step to make lasagna,2,0,0
+406,Give me an easy-to-cook curry recipe,3,0,1
+407,Show me a recipe for a simple yet delicious pasta dish,2,0,0
+408,Simple tofu stir-fry,2,0,1
+409,Recipe for classic fried chicken,2,0,0
+410,Recipes for a simple vegetarian dinner,3,0,1
+411,Show me a quick and nutritious lunch recipe,3,2,0
+412,Show me something that looks vibrant and colorful,0,0,0
+413,I need a recipe that looks indulgent,0,0,0
+414,Tacos quick simple,2,2,1
+415,Tomato soup quick,2,2,0
+416,Quick vegetarian dinners,3,2,0
+417,Show me a recipe that looks decadent,0,0,0
+418,Breakfast ideas under 10 minutes,3,1,0
+419,I need a visually appealing brunch recipe,0,0,0
+420,Show me a recipe for a visually stunning dessert,0,0,0
+421,How to cook chicken tikka masala?,2,0,0
+422,Step-by-step to make a classic beef stir-fry,2,0,0
+423,How to prepare a delicious vegetable curry,2,0,0
+424,Show me a light and airy dessert,0,0,0
+425,Dishes,3,0,0
+426,What to cook with pork and apples?,1,0,0
+427,What to cook with scallops and bacon?,1,0,0
+428,Dishes simple,3,0,1
+429,What can I prepare with zucchini and cheese?,1,0,0
+430,Looking for recipes using sweet potatoes and kale,1,0,0
+431,Instructions for making enchiladas,2,0,0
+432,Dishes fast simple,3,2,1
+433,Recipes with lentils and tomatoes,1,0,0
+434,Quick ideas for dinner,3,2,0
+435,Suggest some easy-to-make snacks,3,0,1
+436,Lamb shank easy,2,0,1
+437,I want to cook something that looks delightful,0,0,0
+438,Easy breakfast ideas for kids,3,0,1
+439,Pasta primavera under 30,2,1,0
+440,Meals,3,0,0
+441,Looking for visually appealing appetizers,0,0,0
+442,Snacks in a hurry,3,2,0
+443,Instructions for making ramen noodles,2,0,0
+444,Recipes for a chicken and vegetable stir fry,1,0,0
+445,How do I make a perfect chicken piccata?,2,0,0
+446,Suggestions for a visually appealing main course,0,0,0
+447,Give me a recipe that looks festive,0,0,0
+448,Quiche Lorraine fast simple,2,2,1
+449,Give me a recipe for a colorful smoothie bowl,0,0,0
+450,What to cook with beef and mushrooms?,1,0,0
+451,Show me a quick vegetarian lunch recipe,3,2,0
+452,I need a recipe that looks fresh and delicious,0,0,0
+453,Show me a dinner recipe that's low in calories,3,0,0
+454,Pasta primavera quick beginner,2,2,1
+455,Quinoa beet salad recipe,2,0,0
+456,Show me a fast vegetarian dinner recipe,3,2,0
+457,I need a visually appealing main course,0,0,0
+458,Recipes using chicken and broccoli,1,0,0
+459,I need a dish that looks rustic,0,0,0
+460,What can I bake with bananas and oats?,1,0,0
+461,Dinner that's quick to prepare,3,2,0
+462,Easy recipes for dinner,3,0,1
+463,Fast lunch in 20,3,1,0
+464,Give me an easy recipe for vegetable stir-fry,3,0,1
+465,Guide to making a traditional shepherd's pie,2,0,0
+466,Looking for a dish that looks rich and savory,0,0,0
+467,I need a recipe for a simple stew,2,0,0
+468,Show me a quick dinner recipe,3,2,0
+469,I need a visually appealing dessert,0,0,0
+470,I want to make a classic lasagna,2,0,0
+471,Chocolate mousse quick,2,2,0
+472,What to cook with lamb and mint?,1,0,0
+473,Show me a light and fresh dinner recipe,3,0,0
+474,Recipes for a savory quiche with mushrooms,1,0,0
+475,Instructions for making baklava,2,0,0
+476,Instructions for making ramen,2,0,0
+477,Instructions for chocolate chip cookies,2,0,0
+478,I need a dish that looks vibrant,0,0,0
+479,What is a good recipe for a vegan dinner?,3,0,0
+480,Quick and healthy dinner recipes,3,2,0
+481,"I'm looking for a light, colorful salad",0,0,0
+482,Give me a fast and easy breakfast recipe,3,2,0
+483,Grilled cheese,2,0,0
+484,Find me a dessert that looks elegant and sophisticated,0,0,0
+485,How to make a classic Greek salad?,2,0,0
+486,Show me a dish that looks rich and indulgent,0,0,0
+487,Snack picks,3,0,0
+488,Recipes using turkey and cranberries,1,0,0
+489,Quick breakfast recipes for busy mornings,3,2,0
+490,Roasted duck quick,2,2,0
+491,Easy recipes for brunch,3,0,1
+492,What to cook with turkey and stuffing?,1,0,0
+493,Instructions for making classic macaroni and cheese,2,0,0
+494,Ideas for dishes with salmon and dill,1,0,0
+495,I want to make a basic tomato sauce,2,0,0
+496,Chicken burger quick,2,2,0
+497,Speedy matcha cheesecake,2,2,0
+498,Instructions for making tiramisu,2,0,0
+499,Recipes for a beef and barley stew,1,0,0
+500,What can I prepare with chickpeas and kale?,1,0,0
+501,Pear tart soon,2,2,0
+502,Give me a beginner recipe for pancakes,3,0,1
+503,How to make chicken curry?,2,0,0
+504,I need a simple vegetarian dish,3,0,0
+505,"I'm looking for an easy, visually appealing snack",0,0,0
+506,I need a meal that looks fresh and healthy,0,0,0
+507,Can I have a recipe for a hearty stew?,2,0,0
+508,Suggest a quick and easy dinner recipe,3,2,0
+509,Give me instructions for making chicken curry,2,0,0
+510,I need a meal that looks healthy and delicious,0,0,0
+511,I need a recipe that looks elegant but is easy to make,0,0,0
+512,I want to cook something green and healthy,0,0,0
+513,Show me a dish that looks rich and creamy,0,0,0
+514,Recipes using beans and corn,1,0,0
+515,Lunches for new cooks,3,0,1
+516,Matcha cheesecake steps,2,0,0
+517,I need a dish that looks refreshing,0,0,0
+518,Baked salmon under 20,2,1,0
+519,What can I make with chicken and zucchini?,1,0,0
+520,What can I bake with apples and walnuts?,1,0,0
+521,How to make a classic Caesar salad?,2,0,0
+522,Dinner suggestions,3,0,0
+523,Quick dinner ideas for beginners,3,2,1
+524,What to cook with tuna and beans?,1,0,0
+525,What can I cook with tofu and mushrooms?,1,0,0
+526,Some easy-to-prepare breakfast recipes,3,0,1
+527,Step-by-step to make mac and cheese,2,0,0
+528,Looking for a visually appealing side dish,0,0,0
+529,Quick dinner ideas,3,2,0
+530,Recipe for homemade scones,2,0,0
+531,How to make a traditional apple pie?,2,0,0
+532,Recipes for a savory pie with cheese,1,0,0
+533,What to cook with cod and potatoes?,1,0,0
+534,Give me a recipe for a colorful salad,0,0,0
+535,I'm looking for a dish that looks festive,0,0,0
+536,Quick breakfast ideas for busy mornings,3,2,0
+537,Easy vegetarian meals,3,0,1
+538,Find me a dish that looks vibrant,0,0,0
+539,Suggestions for visually appealing main courses,0,0,0
+540,How to make a classic crème brûlée?,2,0,0
+541,Show me a colorful side dish,0,0,0
+542,Show me a dish that looks elegant,0,0,0
+543,How to prepare a classic vegetable stir-fry?,2,0,0
+544,I want to make a classic soup,2,0,0
+545,How to prepare a classic chicken curry?,2,0,0
+546,Suggest a dish that looks visually impressive,0,0,0
+547,I want to make a dish that looks appetizing,0,0,0
+548,Show me a salad that looks vibrant and fresh,0,0,0
+549,Quick and simple salad ideas,3,2,0
+550,Recipe for classic meatloaf,2,0,0
+551,Fried rice easy,2,0,1
+552,How to prepare a traditional jambalaya?,2,0,0
+553,Fried rice guide,2,0,0
+554,Baked salmon,2,0,0
+555,Tomato bruschetta simple,2,0,1
+556,Recipe for homemade bread,2,0,0
+557,What to prepare with eggplant and tomatoes?,1,0,0
+558,Venison stew how-to,2,0,0
+559,How to prepare a simple chicken stir-fry,2,0,1
+560,Lemon risotto quick,2,2,0
+561,What to cook with duck and oranges?,1,0,0
+562,Suggest a simple lunch recipe,3,2,0
+563,Instructions for making lasagna,2,0,0
+564,I'd like a recipe that looks fancy but is beginner-friendly,0,0,1
+565,Quick breakfast ideas for beginners,3,2,1
+566,Show me a colorful fruit salad,0,0,0
+567,Looking for a dessert that looks light and fluffy,0,0,0
+568,Quick recipes for lunch,3,2,0
+569,Recipe for chocolate lava cake,2,0,0
+570,Quick lunch recipes for busy days,3,2,0
+571,Suggest a fast breakfast recipe,3,2,0
+572,What to cook with beef and bell peppers?,1,0,0
+573,I need a dish that looks gourmet and takes 80 minutes,0,1,0
+574,Show me a recipe for a beautiful drink,0,0,0
+575,Garlic prawns fast,2,2,0
+576,Suggest some easy-to-make brunch recipes,3,0,1
+577,How to cook a traditional shepherd's pie?,2,0,0
+578,How do I make a visually appealing fruit salad?,0,0,0
+579,How to prepare a traditional coq au vin?,2,0,0
+580,What can I prepare with zucchini and feta cheese?,1,0,0
+581,Suggest a quick and easy breakfast,3,2,0
+582,Chicken tikka under 30 easy,2,1,1
+583,Recipe for homemade sushi,2,0,0
+584,Show me a recipe for a quick and delicious dinner,3,2,0
+585,Falafel simple,2,0,1
+586,Recipe for homemade pancakes,2,0,0
+587,How to make a traditional panna cotta?,2,0,0
+588,Recipes under 15,3,1,0
+589,What can I make with potatoes and onions?,1,0,0
+590,I want to cook something that looks fresh and colorful,0,0,0
+591,Show me a fast and healthy dinner recipe,3,2,0
+592,How to prepare a simple pasta carbonara?,2,0,0
+593,I want a dessert that looks beautiful,0,0,0
+594,Quick breakfast under 15,3,1,0
+595,Squash soup,2,0,0
+596,I need a dish that looks elegant and classy,0,0,0
+597,Give me a simple and quick lunch recipe,3,2,0
+598,Easy recipes for a quick dinner,3,2,0
+599,Pasta primavera,2,0,0
+600,Desserts without hassle,3,0,1
+601,Give me a recipe that looks nutritious,0,0,0
+602,Dishes using shrimp and avocado,1,0,0
+603,I need a visually appealing salad,0,0,0
+604,Step-by-step to make a classic panna cotta,2,0,0
+605,What can I cook with eggplant and tomatoes?,1,0,0
+606,Suggest an easy dinner recipe,3,0,1
+607,Lemon risotto guide,2,0,0
+608,I need a visually stunning appetizer,0,0,0
+609,Vegetable stir-fry easy,2,0,1
+610,Cheese fondue guide,2,0,0
+611,Pesto pasta quick,2,2,0
+612,Step-by-step to make a classic beef chili,2,0,0
+613,I need a dish that looks rich and hearty,0,0,0
+614,What to cook with bacon and mushrooms?,1,0,0
+615,I want to cook something that looks rich and creamy,0,0,0
+616,Recipes with quinoa and black beans,1,0,0
+617,How to prepare a classic chicken parmesan?,2,0,0
+618,Suggest a visually appealing salad,0,0,0
+619,Quick and easy recipes for dinner,3,2,0
+620,How to make a classic pasta carbonara?,2,0,0
+621,Easy vegan lunches,3,0,1
+622,Instructions for making a classic roast,2,0,0
+623,How to make an elaborate dessert?,0,0,0
+624,Easy-to-prepare brunch ideas,3,0,1
+625,What to cook with bell peppers and ground beef?,1,0,0
+626,Can you suggest a visually appealing soup?,0,0,0
+627,Meals under 20 quick,3,1,2
+628,Looking for a visually appealing seafood dish,0,0,0
+629,What can I make with potatoes and carrots?,1,0,0
+630,Recipes using asparagus and lemon,1,0,0
+631,Meals quick,3,2,0
+632,I want to cook something that looks satisfying,0,0,0
+633,I want a meal that looks healthy and delicious,0,0,0
+634,How to prepare a traditional chicken curry?,2,0,0
+635,Show me a recipe for a quick and healthy breakfast,3,2,0
+636,What can I cook with shrimp and rice?,1,0,0
+637,Chicken tikka,2,0,0
+638,Recipes with tofu and mushrooms,1,0,0
+639,I need a dish that looks festive and takes 100 minutes,0,1,0
+640,Tacos,2,0,0
+641,Suggest some easy-to-make lunch recipes,3,0,1
+642,What can I bake with strawberries and cream?,1,0,0
+643,What can I cook with lentils and sweet potatoes?,1,0,0
+644,What to prepare with cabbage and pork?,1,0,0
+645,Banana bread quick,2,2,0
+646,How to make homemade granola?,2,0,0
+647,Easy dinner ideas with pasta,3,0,1
+648,Tiramisu guide,2,0,0
+649,I want to make something that looks elegant,0,0,0
+650,Cuisine easy,3,0,1
+651,Show me a dish that looks simple yet elegant,0,0,0
+652,Recipe for homemade pizza dough,2,0,0
+653,What can I make with cauliflower and cheese?,1,0,0
+654,How to make a traditional mac and cheese?,2,0,0
+655,How to prepare a classic beef bourguignon?,2,0,0
+656,Quick dinner recipes for busy nights,3,2,0
+657,Recipes with broccoli and tofu,1,0,0
+658,How can I use tomatoes and mozzarella in a dish?,1,0,0
+659,Beef tacos steps,2,0,0
+660,How do I make a perfect chicken marsala?,2,0,0
+661,Looking for a light and refreshing appetizer,0,0,0
+662,Balsamic chicken instructions,2,0,0
+663,What can I cook with chicken and broccoli?,1,0,0
+664,Falafel,2,0,0
+665,Show me an easy lunch recipe,3,2,0
+666,"Show me a recipe for a light, refreshing drink",0,0,0
+667,Spaghetti fast,2,2,0
+668,How to make a classic chocolate cake?,2,0,0
+669,Recipe mango chutney,2,0,0
+670,What to cook with beef and carrots?,1,0,0
+671,Cuisine,3,0,0
+672,Quick lunch ideas for a busy workday,3,2,0
+673,Looking for visually appealing side dishes,0,0,0
+674,How to cook a traditional paella?,2,0,0
+675,How to make a classic beef bourguignon?,2,0,0
+676,What can I cook with beef and potatoes?,1,0,0
+677,Couscous speedy,2,2,0
+678,Give me an easy recipe for vegetable curry,3,0,1
+679,Easy-to-prepare lunch ideas,3,0,1
+680,What to cook with ground beef and beans?,1,0,0
+681,"Show me a recipe for a light, refreshing salad",0,0,0
+682,I need a visually appealing brunch dish,0,0,0
+683,Recipes for a chicken and rice casserole,1,0,0
+684,Can you recommend a dish with kale and chickpeas?,1,0,0
+685,Looking for a refreshing drink,0,0,0
+686,I'd like a recipe that looks gourmet but is easy to make,0,0,0
+687,Instructions for a gourmet pizza,2,0,0
+688,I need a simple fish recipe,3,0,0
+689,Chocolate mousse instructions,2,0,0
+690,What to cook with beans and rice?,1,0,0
+691,Squash soup fast,2,2,0
+692,I need a recipe that looks impressive but is fast to make,0,0,1
+693,Instructions for making chocolate mousse,2,0,0
+694,Brunch,3,0,0
+695,Quick recipes with turkey,3,2,0
+696,How to make a classic beef wellington?,2,0,0
+697,Can I get a recipe for a hearty vegetable soup?,2,0,0
+698,Easy snack ideas,3,0,1
+699,Instructions for making vegetable lasagna,2,0,0
+700,How do I make a beef Wellington?,2,0,0
+701,Guide me on making a traditional jambalaya,2,0,0
+702,Show me a recipe for a quick and healthy lunch,3,2,0
+703,Find a recipe that looks visually stunning,0,0,0
+704,I need a dish that looks healthy,0,0,0
+705,Berry pavlova recipe,2,0,0
+706,Step-by-step to make a classic tiramisu,2,0,0
+707,Looking for a visually appealing brunch idea,0,0,0
+708,How to cook chicken parmesan?,2,0,0
+709,Stuffed peppers easy,2,0,1
+710,I need a recipe that looks colorful and inviting,0,0,0
+711,How to prepare a traditional pad Thai?,2,0,0
+712,How to make a classic French onion soup?,2,0,0
+713,Show me a fancy dessert recipe,0,0,0
+714,Suggest a breakfast recipe under 15 minutes,3,1,0
+715,Parmesan chicken fast,2,2,0
+716,I want a recipe that looks fresh and healthy,0,0,0
+717,Lunch ideas,3,0,0
+718,Tiramisu simple,2,0,1
+719,Find me a dish that looks appetizing and healthy,0,0,0
+720,Apple pie soon,2,2,0
+721,Guide me on making a traditional curry,2,0,0
+722,Recipes for a beef and potato stew,1,0,0
+723,Show me how to make tiramisu,2,0,0
+724,I need a recipe that looks sophisticated,0,0,0
+725,Quick and healthy lunch ideas,3,2,0
+726,What to prepare with cabbage and carrots?,1,0,0
+727,Onion tart recipe,2,0,0
+728,I need a recipe that looks light and refreshing,0,0,0
+729,Recipe for classic brownies,2,0,0
+730,Recipe for banana bread,2,0,0
+731,I need a dish that looks festive,0,0,0
+732,Recipe for homemade doughnuts,2,0,0
+733,Suggest a visually appealing dessert,0,0,0
+734,Gazpacho under 30,2,1,0
+735,How to make a traditional French toast?,2,0,0
+736,Grilled cheese quick,2,2,0
+737,Banana bread easy,2,0,1
+738,Dinner under 20,3,1,0
+739,Find a recipe that looks impressive,0,0,0
+740,What to prepare with salmon and asparagus?,1,0,0
+741,Recipe for classic cheesecake,2,0,0
+742,What can I cook with spinach and ricotta?,1,0,0
+743,What to prepare with sweet potatoes and cinnamon?,1,0,0
+744,Falafel quick,2,2,0
+745,Vegetarian dishes,3,0,0
+746,Quick dessert recipes,3,1,0
+747,What can I prepare with bell peppers and tofu?,1,0,0
+748,Clam chowder steps,2,0,0
+749,Pumpkin soup fast,2,2,0
+750,Grilled veggies simple,2,0,1
+751,What can I prepare with shrimp and garlic?,1,0,0
+752,Simple keto recipes,3,0,1
+753,Apple pie recipe,2,0,0
+754,What can I make with tofu and mushrooms?,1,0,0
+755,Quick dinner ideas for a busy evening,3,2,0
+756,What to cook with chicken and tomatoes?,1,0,0
+757,Easy recipes for chicken thighs,3,0,1
+758,Squash soup simple,2,0,1
+759,Easy-to-make dinner recipes,3,0,1
+760,What can I prepare with spinach and feta cheese?,1,0,0
+761,Show me a colorful dessert,0,0,0
+762,Parmesan chicken,2,0,0
+763,Find a recipe that looks festive and bright,0,0,0
+764,Show me a dish that looks rich,0,0,0
+765,What can I make with pork and potatoes?,1,0,0
+766,Pumpkin soup simple,2,0,1
+767,Paella under 30 simple,2,1,1
+768,Paella simple,2,0,1
+769,How to cook a classic meatloaf?,2,0,0
+770,What can I make with lentils and carrots?,1,0,0
+771,How to prepare a classic ratatouille?,2,0,0
+772,Vegan meals,3,0,0
+773,Suggestions for a visually appealing dessert,0,0,0
+774,Parmesan chicken quick easy,2,2,1
+775,Show me a healthy and colorful salad,0,0,0
+776,What can I make with zucchini and basil?,1,0,0
+777,How to cook carbonara?,2,0,0
+778,Baked salmon easy,2,0,1
+779,How to prepare a classic beef stew?,2,0,0
+780,I want a meal that looks elegant but is quick to make,0,1,0
+781,Show me a recipe for a beautiful cake,0,0,0
+782,I need a visually appealing soup,0,0,0
+783,Guide me on making a traditional borscht,2,0,0
+784,Guide to making a traditional lasagna,2,0,0
+785,What to cook with bacon and eggs in under 20 minutes?,1,1,0
+786,I want a meal that looks decadent and rich,0,0,0
+787,Recipe for classic tiramisu,2,0,0
+788,Recipe for beef stroganoff,2,0,0
+789,Keto-friendly meals,3,0,0
+790,Pork tenderloin under 25,2,1,0
+791,I need a recipe that looks fresh and light,0,0,0
+792,What to prepare with quinoa and black beans?,1,0,0
+793,Gazpacho beginner,2,0,1
+794,Find a recipe that looks fancy and elegant,0,0,0
+795,Quick and easy dessert ideas,3,2,0
+796,Recipes using beans and tomatoes,1,0,0
+797,Seafood chowder simple,2,0,1
+798,Quick breakfast ideas,3,2,0
+799,Pork tenderloin under 25 quick,2,1,2
+800,Easy snacks,3,2,0
+801,Recipes for a beef and barley soup,1,0,0
+802,Pasta primavera easy,2,0,1
+803,Quick desserts,3,2,0
+804,Clam chowder fast,2,2,0
+805,What to prepare with broccoli and cheese?,1,0,0
+806,How do I make a perfect roast chicken?,2,0,0
+807,Quick and easy lunch recipes,3,2,0
+808,Fast and easy dinner ideas,3,2,0
+809,Give me a recipe for a fancy appetizer,0,0,0
+810,Guide to making a traditional beef stew,2,0,0
+811,Dinner simple,3,0,1
+812,Recipes using cauliflower and turmeric,1,0,0
+813,Suggest a quick dinner recipe,3,2,0
+814,I want a dessert recipe that looks festive,0,0,0
+815,What can I bake with blueberries and yogurt?,1,0,0
+816,Recipe for classic waffles,2,0,0
+817,Mushroom risotto beginner,2,0,1
+818,What can I make with ground beef and potatoes?,1,0,0
+819,Instructions for making a classic meatloaf,2,0,0
+820,Show me a recipe for a comforting soup,3,2,0
+821,Gluten-free options,3,0,0
+822,Quick and simple recipes for lunch,3,2,0
+823,What can I cook with beef and broccoli?,1,0,0
+824,I'm looking for something that looks creamy and takes 45 minutes,0,1,0
+825,What can I bake with bananas and chocolate?,1,0,0
+826,Step-by-step to make a lemon meringue pie,2,0,0
+827,Step-by-step to make a classic chicken curry,2,0,0
+828,Give me a beginner's guide to baking,3,0,1
+829,What to cook with spinach and feta?,1,0,0
+830,King crab bisque fast,2,2,0
+831,Roasted duck instructions,2,0,0
+832,Suggest a quick snack recipe,3,2,0
+833,How to prepare a traditional risotto?,2,0,0
+834,I need a recipe that looks delicate and takes 90 minutes,0,1,0
+835,What can I cook with shrimp and corn?,1,0,0
+836,I need a recipe for a delicious fruit tart,2,0,0
+837,Find a recipe that looks festive,0,0,0
+838,Show me a visually stunning vegan dish,0,0,0
+839,Recipe for making tiramisu,2,0,0
+840,I'm looking for a visually appealing snack,0,0,0
+841,"Looking for a refreshing, visually appealing drink",0,0,0
+842,Quick breakfast recipes for a busy day,3,2,0
+843,Instructions for making chicken curry,2,0,0
+844,Guide me on preparing a traditional ramen,2,0,0
+845,Looking for a dish that looks rich and creamy,0,0,0
+846,Tomato bruschetta fast,2,2,0
+847,What can I bake with apples and cinnamon?,1,0,0
+848,Quick recipes with pork,3,2,0
+849,I'm looking for a dish that looks gourmet,0,0,0
+850,Easy-to-make lunch recipes,3,0,1
+851,Balsamic chicken fast,2,2,0
+852,Guide me on making a classic cheesecake,2,0,0
+853,How to cook a delicious bolognese sauce?,2,0,0
+854,Instructions for making crispy fried chicken,2,0,0
+855,What can I cook with chicken and spinach?,1,0,0
+856,I need a recipe that looks simple but elegant,0,0,0
+857,What can I prepare with eggs and spinach?,1,0,0
+858,What can I prepare with fish and potatoes?,1,0,0
+859,Show me an easy breakfast recipe,3,2,0
+860,Easy-to-make dinner ideas,3,0,1
+861,Spaghetti under 20 fast,2,1,2
+862,Parmesan chicken simple,2,0,1
+863,Step-by-step to make a classic beef bourguignon,2,0,0
+864,Breakfast options,3,0,0
+865,Suggest a dish that looks fancy,0,0,0
+866,Couscous easy,2,0,1
+867,Step-by-step to make a classic beef burger,2,0,0
+868,Brunch fast,3,2,0
+869,Quick breakfast recipes for beginners,3,2,1
+870,Lamb shank under 45 simple,2,1,1
+871,Quick breakfasts,3,2,0
+872,Find me a dessert that looks light and airy,0,0,0
+873,What to cook with carrots and peas?,1,0,0
+874,I need a recipe that looks healthy and vibrant,0,0,0
+875,Show me a recipe for a quick and tasty lunch,3,2,0
+876,I need a recipe that looks gourmet but is easy to make,0,0,0
+877,"I'm looking for an easy, visually appealing dessert",0,0,0
+878,Easy gluten-free meals,3,0,1
+879,What to cook with beans and quinoa?,1,0,0
+880,I want a meal that looks healthy and vibrant,0,0,0
+881,Show me a quick lunch recipe,3,2,0
+882,Lamb shank,2,0,0
+883,What can I make with chickpeas and spinach?,1,0,0
+884,Easy-to-make breakfast recipes,3,0,1
+885,Pesto pasta how-to,2,0,0
+886,What can I prepare with quinoa and tomatoes?,1,0,0
+887,Show me recipes for a nutritious breakfast,3,0,0
+888,I want to cook a dish that looks vibrant and colorful,0,0,0
+889,Show me a quick vegetarian dinner recipe,3,2,0
+890,I'm looking for a healthy and vibrant salad recipe,0,0,0
+891,Dinners anyone can make,3,0,1
+892,Show me a dessert that looks rich and decadent,0,0,0
+893,Beef stroganoff fast,2,2,0
+894,Bake a pear tart,2,0,0
+895,How to make a classic pie?,2,0,0
+896,What can I cook with beef and carrots?,1,0,0
+897,Show me a dish that looks rich and hearty,0,0,0
+898,Recipe for homemade gnocchi,2,0,0
+899,Recipes for a cozy dinner,3,0,0
+900,Seafood chowder,2,0,0
+901,Quick duck confit,2,2,0
+902,I'm looking for a dish that looks colorful,0,0,0
+903,Easy recipes for snacks,3,0,1
+904,Quick and healthy breakfast ideas,3,2,0
+905,Lunch solutions in 15 minutes,3,1,0
+906,Step-by-step to make a classic beef stew,2,0,0
+907,Recipe for homemade vegetable soup,2,0,0
+908,How to prepare a seafood paella?,2,0,0
+909,I need a quick dinner recipe,3,2,0
+910,How do I make a perfect omelette?,2,0,0
+911,Instructions for a traditional carbonara,2,0,0
+912,Looking for an easy salad recipe,3,0,1
+913,I need a recipe that looks rustic and takes 60 minutes,0,1,0
+914,Give me a recipe that looks elegant,0,0,0
+915,Mushroom risotto,2,0,0
+916,Beef stroganoff,2,0,0
+917,Show me a dessert recipe that looks luxurious,0,0,0
+918,Fish tacos how-to,2,0,0
+919,Recipes for a savory quiche with spinach,1,0,0
+920,What can I make with zucchini and tomatoes?,1,0,0
+921,Quick and easy brunch ideas,3,2,0
+922,Show me a recipe for a beautiful salad,0,0,0
+923,Easy recipes for a quick snack,3,0,1
+924,Chocolate mousse easy,2,0,1
+925,Vegetable stir-fry speedy simple,2,2,1
+926,Easy snack ideas for a party,3,0,1
+927,Give me a recipe that looks fresh and colorful,0,0,0
+928,Guide to making a traditional minestrone soup,2,0,0
+929,How to make a traditional mousse?,2,0,0
+930,Instructions for making fettuccine alfredo,2,0,0
+931,What can I cook with shrimp and pasta?,1,0,0
+932,Instructions for making a classic cheeseburger,2,0,0
+933,Caramel custard simple,2,0,1
+934,Show me recipes that look colorful and appetizing,0,0,0
+935,I need a recipe that looks delicate and takes 70 minutes,0,1,0
+936,How to cook a simple frittata?,2,0,0
+937,Show me a recipe for a decadent chocolate dessert,0,0,0
+938,What can I make with bell peppers and chicken?,1,0,0
+939,Tacos simple,2,0,1
+940,Instructions for making classic chicken Alfredo,2,0,0
+941,How to cook a delicious steak,2,0,0
+942,Show me a dish that looks decadent,0,0,0
+943,How do I make beef stroganoff?,2,0,0
+944,Instructions for a classic fish and chips,2,0,0
+945,Instructions for making fluffy waffles,2,0,0
+946,Suggest a beginner recipe for dinner,3,0,1
+947,Suggestions for visually appealing desserts,0,0,0
+948,What's a good recipe for a hearty stew?,3,0,0
+949,Looking for a visually appealing dessert,0,0,0
+950,What can I make with potatoes and cheese?,1,0,0
+951,Quick lunch ideas,3,2,0
+952,Give me an easy-to-make pasta recipe,3,0,1
+953,Recipe for lemon meringue pie,2,0,0
+954,Can you suggest a visually appealing main dish?,0,0,0
+955,What can I make with spinach and ricotta?,1,0,0
+956,Recipe for homemade lasagna,2,0,0
+957,What dishes can I make with zucchini and squash?,1,0,0
+958,Show me how to cook paella,2,0,0
+959,Pesto pasta easy,2,0,1
+960,Can you recommend a dish that looks elegant?,0,0,0
+961,Spaghetti easy,2,0,1
+962,Quick lunch recipes for busy workdays,3,2,0
+963,Instructions for making creamy mashed potatoes,2,0,0
+964,I want a meal that looks colorful and vibrant,0,0,0
+965,Quick dinner ideas with beef,3,2,0
+966,Instructions for making fluffy pancakes,2,0,0
+967,Show me a fast pasta recipe,3,2,0
+968,Instructions for making a traditional ratatouille,2,0,0
+969,What to cook with shrimp and rice?,1,0,0
+970,Instructions for making a classic salad,2,0,0
+971,What to prepare with asparagus and lemon?,1,0,0
+972,Sushi rolls beginner,2,0,1
+973,What can I cook with pork and apples?,1,0,0
+974,I need a recipe for a classic risotto,2,0,0
+975,Step-by-step to make a classic beef wellington,2,0,0
+976,Show me a healthy snack recipe,3,0,0
+977,Find a recipe that looks beautiful,0,0,0
+978,Chicken tikka beginner,2,0,1
+979,Recipe for homemade tacos,2,0,0
+980,I want to make a basic tomato soup,2,0,0
+981,Grilled veggies fast,2,2,0
+982,I want to cook something that looks refreshing,0,0,0
+983,Suggestions for a low-carb meal with cauliflower and broccoli,1,0,0
+984,I want to make something that looks appetizing,0,0,0
+985,Recipe for classic beef stew,2,0,0
+986,Chicken burger easy,2,0,1
+987,Lamb tagine recipe,2,0,0
+988,Clam chowder simple,2,0,1
+989,I need a recipe for a classic stew,2,0,0
+990,Instructions for making sushi rolls,2,0,0
+991,Show me a quick and easy brunch recipe,3,2,0
+992,Recipe for a classic Italian risotto,2,0,0
+993,I need a dish that looks light and fresh,0,0,0
+994,Pumpkin soup recipe,2,0,0
+995,Suggest a dish that looks colorful and takes 45 minutes,0,1,0
+996,I need a dish that looks luxurious,0,0,0
+997,Snack quick easy,3,2,1
+998,I need a recipe that looks appealing and tasty,0,0,0
+999,Guide me on making a traditional risotto,2,0,0
+1000,What can I prepare with beef and peppers?,1,0,0
+1001,Garlic prawns easy,2,0,1
+1002,Recipes,3,0,0
+1003,How to prepare a classic Margherita pizza?,2,0,0
+1004,I want a meal that looks colorful and healthy,0,0,0
+1005,Recipes using bell peppers and quinoa,1,0,0
+1006,What to cook with chickpeas and tomatoes?,1,0,0
+1007,Caramel custard fast,2,2,0
+1008,How to make risotto,2,0,0
+1009,I need a dish that looks fancy and takes only 30 minutes,0,1,0
+1010,What can I bake with berries and almonds?,1,0,0
+1011,Step-by-step to make chocolate cake,2,0,0
+1012,Suggest a dish that looks festive and takes 60 minutes,0,1,0
+1013,Show me how to cook a dish that looks fancy,0,0,0
+1014,Looking for a visually appealing main course,0,0,0
+1015,Recipes for pasta with tomatoes and garlic,1,0,0
+1016,Apple pie easy,2,0,1
+1017,Quick dinner recipes with pork,3,2,0
+1018,Recipes using zucchini and cheese,1,0,0
+1019,Looking for a visually appealing appetizer,0,0,0
+1020,Recipes for a savory tart with mushrooms,1,0,0
+1021,I want to make a hearty stew,2,0,0
+1022,What can I cook with eggplant and lentils?,1,0,0
+1023,Quick lunch ideas for busy days,3,2,0
+1024,I need a simple dinner idea,3,0,0
+1025,Recipes with shrimp and avocado,1,0,0
+1026,Sushi rolls how-to,2,0,0
+1027,Show me a recipe for a beautiful dessert,0,0,0
+1028,How do I make a perfect beef Wellington?,2,0,0
+1029,What to cook with bell peppers and rice?,1,0,0
+1030,Show me a beginner recipe for a casserole,3,0,1
+1031,Snack easy,3,0,1
+1032,Lemon risotto easy,2,0,1
+1033,Guide for duck confit,2,0,0
+1034,I need a dessert that looks luxurious,0,0,0
+1035,Step-by-step to make a classic French toast,2,0,0
+1036,How to bake a chocolate cake?,2,0,0
+1037,How to make a simple vegetable stir-fry,2,0,0
+1038,Beef tacos fast,2,2,0

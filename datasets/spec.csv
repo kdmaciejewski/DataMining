@@ -1,372 +1,372 @@
 ,text,queries,time,difficulty
-0,Show me a pasta salad recipe,3,0,0
-1,What are some fast bacon and egg recipes?,1,1,0
-2,What can I make with avocado and eggs in a short amount of time?,1,2,0
-3,Quick creamy pasta recipe,2,2,0
-4,Quick rich and decadent recipe,0,2,0
-5,Show me a breakfast recipe in under 20 minutes,3,1,0
-6,What can I prepare with chickpeas and spinach?,1,0,0
-7,Show me recipes for a casual brunch in under 20 minutes,3,1,0
-8,Give me a beginner recipe for spaghetti in under 20 minutes,3,1,1
-9,Fast chicken alfredo pasta instructions,2,1,0
-10,Tell me how to whip up a salad in a short amount of time,3,2,0
-11,What easy dish can I prepare with tofu and broccoli?,1,0,1
-12,Show me recipes for a quick casual brunch,3,2,0
-13,Some lunch recipes to prepare quickly,3,2,0
-14,Chicken dinner recipe in under 20 minutes,3,1,0
-15,Quick and easy lunch ideas,3,2,0
-16,How to prepare pad Thai?,2,0,0
-17,Recipe that looks exotic in under 40 minutes,0,1,0
-18,Easy vegetable pie recipe,1,0,1
-19,Beginner lunch ideas,3,0,1
-20,How to cook beef stroganoff quickly?,2,2,0
-21,What can I make with chickpeas and tomatoes?,1,0,0
-22,Some easy-to-prepare lunch recipes,3,0,1
-23,Savory pie with vegetables in under 60 minutes,1,1,0
-24,Find me a quick low-fat lunch dish,3,2,0
-25,Recipe for blueberry muffins,2,0,0
-26,Show me a breakfast recipe in under 15 minutes,3,1,0
-27,What can I prepare with tofu and broccoli in under 30 minutes?,1,1,0
-28,How to make easy beef tacos?,2,0,1
-29,How to make spaghetti carbonara?,2,0,0
-30,Show me an easy pasta salad recipe,3,0,1
-31,Fast dinner recipes,3,1,0
-32,What to cook with bacon and eggs in a short amount of time?,1,2,0
-33,Show me easy recipes for a casual brunch,3,0,1
-34,Recipes for a casual brunch in under 20 minutes,3,1,0
-35,Simple avocado and eggs recipe,1,0,1
-36,Show me a chicken dinner recipe in under 30 minutes,3,1,0
-37,Simple stir fry in under 20 minutes,2,1,1
-38,Show me a quick and easy soup,3,2,1
-39,How to prepare an easy pad Thai?,2,0,1
-40,Quick recipe for banana pancakes,2,2,0
-41,Simple healthy breakfast ideas,3,0,1
-42,What easy recipe to cook with bacon and eggs?,1,0,1
-43,I need an easy dish that uses spinach and nuts,1,0,1
-44,Give me an easy bacon and eggs recipe,1,0,1
-45,Dinner recipe in a short amount of time,3,2,0
-46,Exotic dish in a short time,0,1,0
-47,How to cook pasta with pesto?,2,0,0
-48,Quick brunch recipes,3,2,0
-49,Show me a recipe with chicken and quinoa in 30 minutes,3,1,0
-50,Recipe for banana pancakes in 15 minutes,2,1,0
-51,Instructions for making a classic Margherita pizza in under 30 minutes,2,1,0
-52,Visually appealing seafood dish in under 40 minutes,0,1,0
-53,What breakfast can I make quickly?,3,2,0
-54,Quick simple seafood pasta recipe,2,2,0
-55,Easy savory pie with vegetables,1,0,1
-56,Quick stir fry instructions,2,2,1
-57,Easy recipes for a casual brunch,3,0,1
-58,How to prepare an easy stir fry,2,0,1
-59,How to make a Caesar salad in 15 minutes?,2,1,0
-60,Show me a pasta salad recipe quickly,3,2,0
-61,Tiramisu in no time,2,1,0
-62,How to cook pasta with pesto quickly?,2,2,0
-63,How to prepare an easy Greek salad?,2,0,1
-64,How to make a Caesar salad quickly?,2,2,0
-65,"Easy light, visually appealing dessert",0,0,1
-66,I want a fish recipe that looks elaborate and can be done quickly,0,2,0
-67,How to make beef tacos?,2,0,0
-68,Recipe for an easy chicken alfredo pasta,2,0,1
-69,Easy lunch ideas,3,0,1
-70,Instructions for a gourmet burger quickly,2,2,0
-71,Show me a recipe with chicken and quinoa,3,0,0
-72,Easy recipe using tofu and green beans,1,0,1
-73,Quick recipe for a savory pie with vegetables,1,2,0
-74,Show me a simple salad recipe quickly,3,2,0
-75,Tiramisu in under 60 minutes,2,1,0
-76,I'm looking for an easy recipe that looks creamy and delicious,0,0,1
-77,I want a fish recipe that looks elaborate and can be done in under 2 hours,0,1,0
-78,What easy recipe can I bake with chocolate and pecans?,1,0,1
-79,Guide me on making beef stew in under an hour,2,1,0
-80,What easy dish can I make with chickpeas and tomatoes?,1,0,1
-81,How do I cook chicken curry?,2,0,0
-82,Recipes with avocado and eggs in under 20 minutes,1,1,0
-83,Give me an easy beginner recipe for spaghetti,3,0,1
-84,Instructions for an easy seafood pasta,2,0,1
-85,Simple chicken dinner recipe,3,0,1
-86,What can I prepare with chickpeas and spinach in 20 minutes?,1,1,0
-87,Tell me how to whip up a salad in under 10 minutes,3,1,0
-88,Tell me how to whip up an easy salad,3,0,1
-89,Simple light and appealing dessert,0,0,1
-90,Fast lunch suggestions,3,2,0
-91,Lasagna recipe under 60 minutes,2,1,0
-92,Easy dinner recipe,3,0,1
-93,Easy tofu and green beans recipe,1,0,1
-94,Suggest some beginner soups,3,0,1
-95,Lunch ideas in under 20 minutes,3,1,0
-96,"Quick light, visually appealing dessert",0,2,0
-97,I need a recipe that looks rich and decadent quickly,0,2,0
-98,Quick recipe using tofu and green beans,1,2,0
-99,Easy dinner suggestions,3,0,1
-100,Show me a chicken dinner recipe in a short amount of time,3,2,0
-101,Easy creamy and delicious recipe,0,0,1
-102,Chicken dinner in a hurry,3,1,0
-103,Quick colorful salad,0,2,0
-104,Soup recipes that take little time,3,1,1
-105,I'd like a recipe that looks exotic but takes only 40 minutes,0,1,0
-106,Casual brunch in a short time,3,1,0
-107,Quick recipe for blueberry muffins,2,2,0
-108,"Quick, visually appealing seafood dish",0,2,0
-109,I'm looking for something that looks creamy and delicious in under 30 minutes,0,1,0
-110,How to make lasagna?,2,0,0
-111,I want to bake a cake that looks festive in 60 minutes,0,1,0
-112,Easy recipe for chicken alfredo pasta,2,0,1
-113,What can I cook with tofu and broccoli?,1,0,0
-114,Guide me on making beef stew in a short amount of time,2,2,0
-115,Gourmet burger in no time,2,1,0
-116,How to cook pasta with pesto in 20 minutes?,2,1,0
-117,Instructions for making an easy classic Margherita pizza,2,0,1
-118,Instructions for an easy gourmet burger,2,0,1
-119,Quick exotic recipe,0,2,0
-120,What can I prepare with tofu and green beans in under 20 minutes?,1,1,0
-121,What can I make with avocado and eggs quickly?,1,2,0
-122,How to prepare a stir fry quickly,2,2,0
-123,What can I bake with chocolate and pecans in a short amount of time?,1,2,0
-124,Quick tofu and green beans recipe,1,2,0
-125,What easy recipe can I make with lentils and tomatoes?,1,0,1
-126,Show me a simple salad recipe in 10 minutes,3,1,0
-127,Quick fish recipe that looks elaborate,0,2,0
-128,How to cook beef stroganoff?,2,0,0
-129,Quick tiramisu recipe,2,2,0
-130,I want a fish recipe that looks elaborate and I have 120 minutes,0,1,0
-131,How to make spaghetti carbonara in under 30 minutes?,2,1,0
-132,Show me how to cook a visually stunning dessert quickly,0,2,0
-133,Show me a quick recipe for apple pie,3,2,0
-134,What to cook with salmon and asparagus quickly?,1,2,0
-135,Fish recipe that looks elaborate in under 120 minutes,0,1,0
-136,Easy recipe for chocolate brownies,2,0,1
-137,"Simple, attractive seafood recipe",0,0,1
-138,I want to bake a cake that looks festive in under an hour,0,1,0
-139,Some lunch recipes to prepare in under 20 minutes,3,1,0
-140,I'm looking for something that looks creamy and delicious,0,0,0
-141,Show me recipes for a casual brunch,3,0,0
-142,Quick healthy breakfast,3,2,0
-143,Show me an easy breakfast recipe,3,0,1
-144,Simple beef stew instructions,2,0,1
-145,Show me a recipe for apple pie,3,0,0
-146,Easy recipe that looks rich and decadent,0,0,1
-147,Show me a quick breakfast recipe,3,2,0
-148,How to prepare a Greek salad?,2,0,0
-149,What easy recipe to cook with salmon and asparagus?,1,0,1
-150,Seafood that looks good and fast to cook,0,1,0
-151,Quick recipes for a casual brunch,3,2,0
-152,How to cook beef stroganoff in under 1 hour?,2,1,0
-153,Recipe for banana pancakes,2,0,0
-154,What to make with sweet potatoes and black beans quickly?,1,2,0
-155,Fast pad Thai preparation,2,1,0
-156,What to easy recipe cook with bacon and eggs?,1,0,1
-157,Instructions for a simple seafood pasta in under 20 minutes,2,1,0
-158,What can I prepare with chickpeas and spinach quickly?,1,2,0
-159,Easy low-fat dish for lunch,3,0,1
-160,How do I cook chicken curry in a short time?,2,2,0
-161,Easy recipe for chocolate chip cookies,2,0,1
-162,Quick recipe for chocolate chip cookies,2,2,0
-163,What can I prepare with tofu and broccoli?,1,0,0
-164,Simple soup recipes,3,0,1
-165,Simple seafood pasta guide,2,0,1
-166,Simple gourmet burger recipe,2,0,1
-167,Fast beef stew recipe,2,1,0
-168,Show me a quick recipe with chicken and quinoa,3,2,0
-169,What can I prepare with tofu and broccoli quickly?,1,2,0
-170,Quick creamy and delicious recipe,0,2,0
-171,Instructions for a simple seafood pasta quickly,2,2,0
-172,Suggest some soups to make in under 30 minutes,3,1,0
-173,What to cook with bacon and eggs in under 20 minutes?,1,1,0
-174,"Looking for a light, visually appealing dessert",0,0,0
-175,What to make with lentils and tomatoes in 30 minutes?,1,1,0
-176,What can I make with avocado and eggs under 20 minutes?,1,1,0
-177,Easy lasagna recipe,2,0,1
-178,Simple seafood pasta in under 40 minutes,2,1,0
+0,"Looking for a light, visually appealing dessert",0,0,0
+1,What to cook with bacon and eggs?,1,0,0
+2,Show me an easy recipe for apple pie,3,0,1
+3,Show me a quick and easy soup,3,2,1
+4,Show me a quick breakfast recipe,3,2,0
+5,Quick rich and decadent recipe,0,2,0
+6,Fast lunch suggestions,3,2,0
+7,Guide me on making quick beef stew,2,2,0
+8,I'm looking for an easy recipe that looks creamy and delicious,0,0,1
+9,Seafood that looks good and fast to cook,0,1,0
+10,Quick recipe for chocolate chip cookies,2,2,0
+11,I'm looking for something that looks creamy and delicious in under 30 minutes,0,1,0
+12,Fast chicken dinner recipe in a short amount of time,3,2,0
+13,Fast chicken alfredo pasta instructions,2,1,0
+14,What to prepare with mushrooms and spinach in 20 minutes?,1,1,0
+15,How to make easy fried rice?,2,0,1
+16,What can I prepare with tofu and green beans?,1,0,0
+17,Show me a pasta salad recipe quickly,3,2,0
+18,Quick recipes with avocado and eggs,1,2,0
+19,Stir fry in no time,2,1,1
+20,Gourmet burger in no time,2,1,0
+21,How do I cook chicken curry?,2,0,0
+22,Show me a quick recipe for apple pie,3,2,0
+23,Tiramisu in no time,2,1,0
+24,Creamy and tasty dish in no time,0,1,0
+25,"Easy light, visually appealing dessert",0,0,1
+26,I want an easy fish recipe that looks elaborate,0,0,1
+27,Simple seafood pasta guide,2,0,1
+28,Find me a colorful salad recipe,0,0,0
+29,Show me an easy breakfast recipe,3,0,1
+30,How to prepare a simple stir fry,2,0,1
+31,How to prepare an easy pad Thai?,2,0,1
+32,Quick simple stir fry recipe,2,2,1
+33,Recipe for blueberry muffins in 20 minutes,2,1,0
+34,What can I prepare with tofu and green beans quickly?,1,2,0
+35,How to make chicken alfredo pasta quickly?,2,2,0
+36,Easy savory pie with vegetables,1,0,1
+37,Fast pad Thai preparation,2,1,0
+38,Give me a beginner recipe for spaghetti in under 20 minutes,3,1,1
+39,Easy lunch ideas,3,0,1
+40,Exotic dish in a short time,0,1,0
+41,Recipe for blueberry muffins,2,0,0
+42,Easy creamy pasta recipe,2,0,1
+43,I'm looking for something that looks creamy and delicious quickly,0,2,0
+44,How to prepare a Greek salad in 10 minutes?,2,1,0
+45,Give me a beginner recipe for spaghetti,3,0,1
+46,I want a fish recipe that looks elaborate and can be done quickly,0,2,0
+47,Quick recipe that looks rich and decadent,0,2,0
+48,How to make easy spaghetti carbonara?,2,0,1
+49,How to cook beef stroganoff quickly?,2,2,0
+50,Quick colorful salad,0,2,0
+51,Show me how to cook an easy visually stunning dessert,0,0,1
+52,Easy dinner recipe,3,0,1
+53,What to easy recipe cook with bacon and eggs?,1,0,1
+54,Easy recipe for chicken alfredo pasta,2,0,1
+55,Guide me on making beef stew,2,0,0
+56,How to make a Caesar salad?,2,0,0
+57,What to cook with ground beef and tomatoes?,1,0,0
+58,Quick and easy lunch ideas in under 20 minutes,3,1,0
+59,I need a recipe that looks rich and decadent in under an hour,0,1,0
+60,Quick recipe for chicken alfredo pasta,2,2,0
+61,Dinner recipe in under 30 minutes,3,1,0
+62,Fish recipe that looks elaborate in under 120 minutes,0,1,0
+63,What breakfast can I make quickly?,3,2,0
+64,What can I make with chickpeas and tomatoes quickly?,1,2,0
+65,Decadent dish in a hurry,0,1,0
+66,I need a dish that uses spinach and nuts,1,0,0
+67,Guide me on making easy beef stew,2,0,1
+68,Quick savory vegetable pie,1,2,0
+69,Show me a breakfast recipe in a short amount of time,3,2,0
+70,Show me a breakfast recipe in under 15 minutes,3,1,0
+71,What to make with lentils and tomatoes?,1,0,0
+72,Quick recipe using tofu and green beans,1,2,0
+73,Give me a quick beginner recipe for spaghetti,3,2,1
+74,Show me a recipe for apple pie in under 1 hour,3,1,0
+75,Savory pie with vegetables in under 60 minutes,1,1,0
+76,Quick easy-to-make soups,3,2,1
+77,Step-by-step to make an easy tiramisu,2,0,1
+78,I want to bake an easy cake that looks festive,0,0,1
+79,Vegetable pie in a short time,1,1,0
+80,I'd like a recipe that looks exotic but takes only 40 minutes,0,1,0
+81,Quick lasagna recipe,2,2,0
+82,Simple brunch ideas,3,0,1
+83,Simple soup recipes,3,0,1
+84,Recipe for banana pancakes in 15 minutes,2,1,0
+85,What easy recipe can I prepare with chickpeas and spinach?,1,0,1
+86,Instructions for making an easy classic Margherita pizza,2,0,1
+87,What can I cook with tofu and broccoli in 15 minutes?,1,1,0
+88,Simple tiramisu recipe,2,0,1
+89,What to cook with bacon and eggs in a short amount of time?,1,2,0
+90,Quick pad Thai recipe,2,2,0
+91,Show me a dinner recipe that's quick to make,3,2,0
+92,How to prepare a stir fry quickly,2,2,0
+93,Quick recipe for a savory pie with vegetables,1,2,0
+94,What easy recipe can I cook with tofu and broccoli?,1,0,1
+95,Quick recipe for chocolate brownies,2,2,0
+96,Show me recipes for a casual brunch,3,0,0
+97,Quick recipe for banana pancakes,2,2,0
+98,Simple avocado and eggs recipe,1,0,1
+99,Tell me how to whip up a quick salad,3,2,0
+100,Quick recipe that looks exotic,0,2,0
+101,Instructions for making a classic Margherita pizza in under 30 minutes,2,1,0
+102,Colorful salad in a short time,0,1,0
+103,Quick brunch recipes,3,2,0
+104,How to make a creamy pasta?,2,0,0
+105,Fast seafood pasta,2,1,0
+106,Show me how to cook a visually stunning dessert in under 30 minutes,0,1,0
+107,Show me an easy recipe with chicken and quinoa,3,0,1
+108,How to make beef tacos in 30 minutes?,2,1,0
+109,Simple gourmet burger recipe,2,0,1
+110,Quick seafood dish that's visually appealing,0,2,0
+111,Quick and easy lunch ideas,3,2,0
+112,Guide me on making beef stew in a short amount of time,2,2,0
+113,How to prepare pad Thai?,2,0,0
+114,How to make a Caesar salad quickly?,2,2,0
+115,What to make with sweet potatoes and black beans?,1,0,0
+116,Lunch ideas in a short amount of time,3,2,0
+117,Suggest some beginner soups,3,0,1
+118,Easy low-fat lunch ideas,3,0,1
+119,How to cook pasta with pesto in 20 minutes?,2,1,0
+120,Easy lasagna recipe,2,0,1
+121,Show me a breakfast recipe in under 20 minutes,3,1,0
+122,Give me an easy beginner recipe for spaghetti,3,0,1
+123,Quick light and appealing dessert,0,2,0
+124,I need an easy recipe that looks rich and decadent,0,0,1
+125,Easy tofu and green beans recipe,1,0,1
+126,Simple chicken dinner recipe,3,0,1
+127,How do I cook an easy chicken curry?,2,0,1
+128,What can I prepare with tofu and broccoli quickly?,1,2,0
+129,What can I cook with tofu and broccoli?,1,0,0
+130,Show me a simple salad recipe quickly,3,2,0
+131,What can I bake with chocolate and pecans?,1,0,0
+132,I need a recipe that looks rich and decadent,0,0,0
+133,I need a fast breakfast option,3,1,0
+134,Tell me how to whip up a salad in a short amount of time,3,2,0
+135,Easy chicken alfredo pasta guide,2,0,1
+136,Recipe for an easy chicken alfredo pasta,2,0,1
+137,What can I bake with chocolate and pecans in under 30 minutes?,1,1,0
+138,Attractive dessert in a short time,0,1,0
+139,What can I make with chickpeas and tomatoes in under 20 minutes?,1,1,0
+140,Show me a chicken dinner recipe in under 30 minutes,3,1,0
+141,Easy recipe for chocolate brownies,2,0,1
+142,Easy seafood dish that's visually appealing,0,0,1
+143,What to cook with salmon and asparagus?,1,0,0
+144,Easy recipe for banana pancakes,2,0,1
+145,Easy creamy and delicious recipe,0,0,1
+146,Some lunch recipes to prepare quickly,3,2,0
+147,Visually appealing seafood dish in under 40 minutes,0,1,0
+148,Recipe that looks exotic in under 40 minutes,0,1,0
+149,What easy recipe can I make with lentils and tomatoes?,1,0,1
+150,Show me recipes for a casual brunch in under 20 minutes,3,1,0
+151,Recipes for a casual brunch in under 20 minutes,3,1,0
+152,Simple seafood pasta in under 40 minutes,2,1,0
+153,Low-fat lunch in a hurry,3,1,0
+154,Easy recipe that looks rich and decadent,0,0,1
+155,Easy gourmet burger recipe,2,0,1
+156,"Simple, attractive seafood recipe",0,0,1
+157,Easy-to-make soups in under 30 minutes,3,1,1
+158,Lasagna in a short time,2,1,0
+159,How to prepare pad Thai in under 30 minutes?,2,1,0
+160,What to make with sweet potatoes and black beans in 30 minutes?,1,1,0
+161,How to make easy beef tacos?,2,0,1
+162,"Simple, fancy fish recipe",0,0,1
+163,What to make with sweet potatoes and black beans quickly?,1,2,0
+164,How to make beef tacos quickly?,2,2,0
+165,How to prepare a Greek salad quickly?,2,2,0
+166,Quick chocolate and pecan baking ideas,1,2,0
+167,Guide me on making an easy beef stew,2,0,1
+168,Instructions for a simple seafood pasta,2,0,0
+169,How to prepare a Greek salad?,2,0,0
+170,Show me a chicken dinner recipe in a short amount of time,3,2,0
+171,Simple lunch ideas,3,0,1
+172,Easy fish recipe that looks elaborate,0,0,1
+173,Find me a seafood dish that's visually appealing,0,0,0
+174,Guide me on making beef stew in under an hour,2,1,0
+175,Quick low-fat dish for lunch,3,2,0
+176,Elaborate fish dish in a short time,0,1,0
+177,Quick creamy and delicious recipe,0,2,0
+178,Creamy pasta in a hurry,2,1,0
 179,"Light, visually appealing dessert in under 30 minutes",0,1,0
-180,Show me a breakfast recipe in a short amount of time,3,2,0
-181,Show me a dinner recipe that's quick to make,3,2,0
-182,Show me how to cook a visually stunning dessert in under 30 minutes,0,1,0
-183,What to cook with bacon and eggs?,1,0,0
-184,How to prepare pad Thai in under 30 minutes?,2,1,0
-185,Easy low-fat lunch ideas,3,0,1
-186,Vegetable pie in a short time,1,1,0
-187,Quick tiramisu guide,2,2,0
-188,How to make spaghetti carbonara quickly?,2,2,0
-189,Fast chicken dinner recipe in a short amount of time,3,2,0
-190,I need a recipe that looks rich and decadent in under an hour,0,1,0
-191,Show me a pasta salad recipe in 15 minutes,3,1,0
-192,Easy chicken alfredo pasta guide,2,0,1
-193,What easy recipe to prepare with mushrooms and spinach?,1,0,1
-194,Colorful salad in a short time,0,1,0
-195,Show me an easy salad recipe,3,0,1
-196,How to cook easy beef stroganoff?,2,0,1
-197,Easy stir fry recipe,2,0,1
-198,Quick seafood pasta recipe,2,2,0
-199,Easy beef stew recipe,2,0,1
-200,Easy gourmet burger recipe,2,0,1
-201,How to make easy fried rice?,2,0,1
-202,Quick light and appealing dessert,0,2,0
-203,Creamy and delicious recipe in under 30 minutes,0,1,0
-204,Easy pad Thai guide,2,0,1
-205,Attractive dessert in a short time,0,1,0
-206,Quick chicken dinner ideas,3,2,0
-207,Quick recipe for chocolate brownies,2,2,0
+180,Dinner recipe in a short amount of time,3,2,0
+181,Recipe for chicken alfredo pasta in under 30 minutes,2,1,0
+182,Show me an easy pasta salad recipe,3,0,1
+183,What to cook with ground beef and tomatoes quickly?,1,2,0
+184,Show me a recipe with chicken and quinoa in 30 minutes,3,1,0
+185,What easy dish can I prepare with tofu and green beans?,1,0,1
+186,Instructions for making a classic Margherita pizza quickly,2,2,0
+187,What to prepare with mushrooms and spinach quickly?,1,2,0
+188,Low-fat dish for lunch in under 20 minutes,3,1,0
+189,Recipe for chocolate chip cookies,2,0,0
+190,Suggest an easy breakfast recipe,3,0,1
+191,Quick dinner ideas,3,2,0
+192,Show me a healthy breakfast recipe,3,0,0
+193,Fast chocolate and pecan recipes,1,1,0
+194,Recipe for chocolate brownies,2,0,0
+195,Easy pad Thai recipe,2,0,1
+196,Easy exotic recipe,0,0,1
+197,Beginner lunch ideas,3,0,1
+198,What can I bake with chocolate and pecans in a short amount of time?,1,2,0
+199,What to make with lentils and tomatoes quickly?,1,2,0
+200,Instructions for a gourmet burger,2,0,0
+201,How to cook pasta with pesto?,2,0,0
+202,Quick chicken dinner ideas,3,2,0
+203,I need an easy dish that uses spinach and nuts,1,0,1
+204,I need a recipe that looks rich and decadent quickly,0,2,0
+205,How to make fried rice quickly?,2,2,0
+206,Show me a quick recipe with chicken and quinoa,3,2,0
+207,I want to bake a cake that looks festive in under an hour,0,1,0
 208,Easy recipe for blueberry muffins,2,0,1
-209,What can I prepare with tofu and green beans quickly?,1,2,0
-210,Quick savory vegetable pie,1,2,0
-211,Creamy pasta in a hurry,2,1,0
-212,How to make beef tacos in 30 minutes?,2,1,0
-213,Simple tiramisu recipe,2,0,1
-214,How to make easy spaghetti carbonara?,2,0,1
-215,Dinner recipe in under 30 minutes,3,1,0
-216,Show me a fast chicken dinner recipe,3,2,0
-217,I want an easy fish recipe that looks elaborate,0,0,1
-218,I need a recipe that looks rich and decadent,0,0,0
-219,How to prepare a stir fry in under 20 minutes,2,1,0
-220,Recipe for blueberry muffins in 20 minutes,2,1,0
-221,What can I bake with chocolate and pecans in under 30 minutes?,1,1,0
-222,What can I cook with tofu and broccoli in 15 minutes?,1,1,0
-223,What to cook with salmon and asparagus in 25 minutes?,1,1,0
-224,What to cook with ground beef and tomatoes?,1,0,0
-225,Easy fish recipe that looks elaborate,0,0,1
-226,Suggest an easy breakfast recipe,3,0,1
-227,Tell me how to whip up a quick salad,3,2,0
-228,Simple brunch ideas,3,0,1
-229,Instructions for making a classic Margherita pizza,2,0,0
-230,Step-by-step to make an easy tiramisu,2,0,1
-231,Avocado and eggs in a rush,1,1,0
-232,Guide me on making easy beef stew,2,0,1
-233,Gourmet burger recipe in under 40 minutes,2,1,0
-234,Easy simple stir fry recipe,2,0,1
-235,Rich and decadent recipe in under 40 minutes,0,1,0
-236,What to cook with ground beef and tomatoes in 25 minutes?,1,1,0
-237,Recipes for a savory pie with vegetables,1,0,0
-238,Some beginner lunch recipes,3,0,1
-239,What can I prepare with tofu and green beans?,1,0,0
-240,How to cook easy pasta with pesto?,2,0,1
-241,Give me a quick beginner recipe for spaghetti,3,2,1
-242,Easy-to-make soups in under 30 minutes,3,1,1
-243,Show me how to cook a visually stunning dessert,0,0,0
-244,How to make fried rice quickly?,2,2,0
-245,Simple lunch ideas,3,0,1
-246,Lunch in a short time,3,1,0
-247,Quick easy-to-make soups,3,2,1
-248,Pad Thai recipe in under 30 minutes,2,1,0
-249,I need an easy recipe that looks rich and decadent,0,0,1
-250,Quick recipes with avocado and eggs,1,2,0
-251,Show me an easy chicken dinner recipe,3,0,1
-252,Recipe for chicken alfredo pasta in under 30 minutes,2,1,0
-253,How to make fried rice?,2,0,0
-254,Quick simple stir fry recipe,2,2,1
-255,What to prepare with mushrooms and spinach quickly?,1,2,0
-256,Easy recipes with avocado and eggs,1,0,1
-257,What easy recipe can I prepare with chickpeas and spinach?,1,0,1
-258,I want to bake a cake that looks festive quickly,0,2,0
-259,Simple lasagna recipe,2,0,1
-260,What to make with sweet potatoes and black beans in 30 minutes?,1,1,0
-261,Quick and easy lunch ideas in under 20 minutes,3,1,0
-262,I need a low-fat dish for lunch,3,0,0
-263,Show me a healthy breakfast recipe,3,0,0
-264,How to make fried rice in 20 minutes?,2,1,0
-265,Instructions for making a classic Margherita pizza quickly,2,2,0
-266,I need a dish that uses spinach and nuts,1,0,0
-267,Fast seafood pasta,2,1,0
-268,What to make with lentils and tomatoes quickly?,1,2,0
-269,Easy pad Thai recipe,2,0,1
-270,Give me a beginner recipe for spaghetti,3,0,1
-271,Recipe for chocolate chip cookies in 20 minutes,2,1,0
-272,Simple easy-to-make soups,3,0,1
-273,Find me a colorful salad recipe,0,0,0
-274,Show me an easy recipe for apple pie,3,0,1
-275,What to cook with salmon and asparagus?,1,0,0
-276,Show me an easy recipe with chicken and quinoa,3,0,1
-277,What to prepare with mushrooms and spinach?,1,0,0
-278,What easy recipe to make with sweet potatoes and black beans?,1,0,1
-279,What can I make with chickpeas and tomatoes quickly?,1,2,0
-280,Easy chocolate and pecan baking,1,0,1
-281,Easy recipe that looks exotic,0,0,1
-282,Easy rich and decadent recipe,0,0,1
-283,Guide me on making beef stew,2,0,0
-284,How to make an easy Caesar salad?,2,0,1
-285,What to cook with ground beef and tomatoes quickly?,1,2,0
-286,Recipe for chicken alfredo pasta quickly,2,2,0
-287,What easy recipe can I cook with tofu and broccoli?,1,0,1
-288,I need a fast breakfast option,3,1,0
-289,Fast tofu and green beans dish,1,1,0
-290,How to make beef tacos quickly?,2,2,0
-291,Step-by-step to make a tiramisu in under 30 minutes,2,1,0
-292,How to make chicken alfredo pasta quickly?,2,2,0
-293,What to make with sweet potatoes and black beans?,1,0,0
-294,Recipe for chocolate brownies,2,0,0
-295,Instructions for a gourmet burger,2,0,0
-296,Step-by-step to make a tiramisu quickly,2,2,0
-297,Recipe for chicken alfredo pasta,2,0,0
-298,Quick seafood dish that's visually appealing,0,2,0
-299,Low-fat lunch in a hurry,3,1,0
-300,Decadent dish in a hurry,0,1,0
-301,I need a recipe that looks rich and decadent in a short amount of time,0,2,0
-302,What easy dish can I prepare with tofu and green beans?,1,0,1
-303,How to prepare pad Thai quickly?,2,2,0
-304,Elaborate fish dish in a short time,0,1,0
-305,I need a dish that uses spinach and nuts in a short amount of time,1,2,0
-306,Easy tiramisu recipe,2,0,1
-307,Quick dinner ideas,3,2,0
-308,I want to bake an easy cake that looks festive,0,0,1
-309,Quick gourmet burger recipe,2,2,0
-310,Lasagna in a short time,2,1,0
-311,How to prepare a simple stir fry,2,0,1
-312,Guide me on making an easy beef stew,2,0,1
-313,How do I cook chicken curry in under 45 minutes?,2,1,0
-314,Quick chocolate and pecan baking ideas,1,2,0
-315,What to prepare with mushrooms and spinach in 20 minutes?,1,1,0
-316,Easy recipe for banana pancakes,2,0,1
-317,Easy seafood dish that's visually appealing,0,0,1
-318,Instructions for a gourmet burger in under 30 minutes,2,1,0
-319,I need a recipe that looks rich and decadent in under 40 minutes,0,1,0
-320,Quick beef stew recipe,2,2,0
-321,Show me a recipe for apple pie in under 1 hour,3,1,0
-322,How to prepare a Greek salad in 10 minutes?,2,1,0
-323,Can I get a recipe using tofu and green beans?,1,0,0
-324,I need a dish that uses spinach and nuts in under 20 minutes,1,1,0
-325,Easy exotic recipe,0,0,1
-326,Quick recipe for chicken alfredo pasta,2,2,0
-327,Lunch ideas in a short amount of time,3,2,0
-328,How to prepare a Greek salad quickly?,2,2,0
-329,Quick lasagna recipe,2,2,0
-330,Quick fancy fish recipe,0,2,0
-331,Show me a simple salad recipe,3,0,0
-332,Stir fry in no time,2,1,1
-333,Quick low-fat dish for lunch,3,2,0
-334,Beef stew recipe in under 60 minutes,2,1,0
-335,What can I bake with chocolate and pecans?,1,0,0
-336,Simple colorful salad,0,0,1
-337,How to make a creamy pasta?,2,0,0
-338,What to make with lentils and tomatoes?,1,0,0
-339,How do I cook an easy chicken curry?,2,0,1
-340,What can I make with chickpeas and tomatoes in under 20 minutes?,1,1,0
-341,Creamy and tasty dish in no time,0,1,0
-342,"Simple, fancy fish recipe",0,0,1
-343,Quick lasagna preparation,2,2,0
-344,What can I cook with tofu and broccoli quickly?,1,2,0
-345,Quick beef stew guide,2,2,0
-346,Low-fat dish for lunch in under 20 minutes,3,1,0
-347,Instructions for a simple seafood pasta,2,0,0
-348,Quick and easy lunch ideas for a busy day,3,2,0
-349,Easy chicken dinner recipe,3,0,1
-350,Easy creamy pasta recipe,2,0,1
-351,Show me how to cook an easy visually stunning dessert,0,0,1
-352,Suggest some easy-to-make soups,3,0,1
-353,Step-by-step to make a tiramisu,2,0,0
-354,Suggest some soups to make quickly,3,2,0
-355,What easy recipe to cook with ground beef and tomatoes?,1,0,1
-356,Easy simple seafood pasta recipe,2,0,1
-357,Fast chocolate and pecan recipes,1,1,0
-358,Guide me on making beef stew in under 1 hour,2,1,0
-359,Guide me on making quick beef stew,2,2,0
-360,Recipe for chocolate brownies in 30 minutes,2,1,0
-361,How to make a Caesar salad?,2,0,0
-362,Healthy breakfast in no time,3,1,0
-363,I'm looking for something that looks creamy and delicious quickly,0,2,0
-364,Find me a seafood dish that's visually appealing,0,0,0
-365,Recipe for chocolate chip cookies,2,0,0
-366,Recipe using tofu and green beans in under 20 minutes,1,1,0
-367,Quick recipe that looks exotic,0,2,0
-368,What easy recipe can I make with avocado and eggs?,1,0,1
-369,Quick recipe that looks rich and decadent,0,2,0
-370,Quick pad Thai recipe,2,2,0
+209,Show me a recipe with chicken and quinoa,3,0,0
+210,Easy chicken dinner recipe,3,0,1
+211,What can I prepare with tofu and broccoli in under 30 minutes?,1,1,0
+212,"Quick light, visually appealing dessert",0,2,0
+213,Healthy breakfast in no time,3,1,0
+214,"Quick, visually appealing seafood dish",0,2,0
+215,Creamy and delicious recipe in under 30 minutes,0,1,0
+216,Recipes with avocado and eggs in under 20 minutes,1,1,0
+217,Simple light and appealing dessert,0,0,1
+218,Simple stir fry in under 20 minutes,2,1,1
+219,What to cook with salmon and asparagus in 25 minutes?,1,1,0
+220,Recipe for chicken alfredo pasta,2,0,0
+221,How to make spaghetti carbonara quickly?,2,2,0
+222,Instructions for a gourmet burger quickly,2,2,0
+223,What easy recipe to cook with salmon and asparagus?,1,0,1
+224,Simple lasagna recipe,2,0,1
+225,Quick recipes for a casual brunch,3,2,0
+226,What easy recipe to prepare with mushrooms and spinach?,1,0,1
+227,How to make an easy Caesar salad?,2,0,1
+228,Step-by-step to make a tiramisu,2,0,0
+229,Some lunch recipes to prepare in under 20 minutes,3,1,0
+230,Recipe for banana pancakes,2,0,0
+231,Beef stew recipe in under 60 minutes,2,1,0
+232,Quick simple seafood pasta recipe,2,2,0
+233,How to cook easy beef stroganoff?,2,0,1
+234,Simple easy-to-make soups,3,0,1
+235,Quick fancy fish recipe,0,2,0
+236,I want a fish recipe that looks elaborate and can be done in under 2 hours,0,1,0
+237,Instructions for a simple seafood pasta quickly,2,2,0
+238,Quick tiramisu recipe,2,2,0
+239,How to make spaghetti carbonara in under 30 minutes?,2,1,0
+240,Show me a pasta salad recipe,3,0,0
+241,Guide me on making beef stew in under 1 hour,2,1,0
+242,Some easy-to-prepare lunch recipes,3,0,1
+243,Quick and easy lunch ideas for a busy day,3,2,0
+244,Show me easy recipes for a casual brunch,3,0,1
+245,What can I prepare with tofu and broccoli?,1,0,0
+246,Easy recipe for chocolate chip cookies,2,0,1
+247,How to prepare an easy Greek salad?,2,0,1
+248,Quick fish recipe that looks elaborate,0,2,0
+249,Show me a simple salad recipe,3,0,0
+250,Quick beef stew guide,2,2,0
+251,What can I prepare with chickpeas and spinach in 20 minutes?,1,1,0
+252,How to make a Caesar salad in 15 minutes?,2,1,0
+253,What can I make with avocado and eggs in a short amount of time?,1,2,0
+254,Step-by-step to make a tiramisu quickly,2,2,0
+255,What to cook with salmon and asparagus quickly?,1,2,0
+256,Easy recipe that looks exotic,0,0,1
+257,I need a dish that uses spinach and nuts in under 20 minutes,1,1,0
+258,What easy recipe to make with sweet potatoes and black beans?,1,0,1
+259,What to prepare with mushrooms and spinach?,1,0,0
+260,Quick tofu and green beans recipe,1,2,0
+261,What can I cook with tofu and broccoli quickly?,1,2,0
+262,Recipe for chocolate brownies in 30 minutes,2,1,0
+263,Quick tiramisu guide,2,2,0
+264,Easy recipes for a casual brunch,3,0,1
+265,Instructions for an easy gourmet burger,2,0,1
+266,What easy recipe can I make with avocado and eggs?,1,0,1
+267,Suggest some easy-to-make soups,3,0,1
+268,Show me how to cook a visually stunning dessert quickly,0,2,0
+269,Fast dinner recipes,3,1,0
+270,I want to bake a cake that looks festive quickly,0,2,0
+271,How to prepare an easy stir fry,2,0,1
+272,Pad Thai recipe in under 30 minutes,2,1,0
+273,I need a dish that uses spinach and nuts in a short amount of time,1,2,0
+274,Show me recipes for a quick casual brunch,3,2,0
+275,Chicken dinner recipe in under 20 minutes,3,1,0
+276,Easy simple seafood pasta recipe,2,0,1
+277,Recipe using tofu and green beans in under 20 minutes,1,1,0
+278,Instructions for a gourmet burger in under 30 minutes,2,1,0
+279,Lasagna recipe under 60 minutes,2,1,0
+280,What easy recipe to cook with ground beef and tomatoes?,1,0,1
+281,Recipes for a savory pie with vegetables,1,0,0
+282,What to make with lentils and tomatoes in 30 minutes?,1,1,0
+283,How to make lasagna?,2,0,0
+284,What to cook with bacon and eggs in under 20 minutes?,1,1,0
+285,How to cook beef stroganoff?,2,0,0
+286,What can I prepare with chickpeas and spinach quickly?,1,2,0
+287,How to make fried rice in 20 minutes?,2,1,0
+288,Simple colorful salad,0,0,1
+289,I need a recipe that looks rich and decadent in a short amount of time,0,2,0
+290,Fast beef stew recipe,2,1,0
+291,How to prepare a stir fry in under 20 minutes,2,1,0
+292,Gourmet burger recipe in under 40 minutes,2,1,0
+293,Quick gourmet burger recipe,2,2,0
+294,How do I cook chicken curry in a short time?,2,2,0
+295,Lunch in a short time,3,1,0
+296,Tiramisu in under 60 minutes,2,1,0
+297,Quick stir fry instructions,2,2,1
+298,What easy dish can I prepare with tofu and broccoli?,1,0,1
+299,What can I prepare with chickpeas and spinach?,1,0,0
+300,Show me a simple salad recipe in 10 minutes,3,1,0
+301,Easy low-fat dish for lunch,3,0,1
+302,Easy dinner suggestions,3,0,1
+303,How to make fried rice?,2,0,0
+304,I want a fish recipe that looks elaborate and I have 120 minutes,0,1,0
+305,Simple healthy breakfast ideas,3,0,1
+306,Fast tofu and green beans dish,1,1,0
+307,Easy stir fry recipe,2,0,1
+308,I need a recipe that looks rich and decadent in under 40 minutes,0,1,0
+309,Quick seafood pasta recipe,2,2,0
+310,Easy recipes with avocado and eggs,1,0,1
+311,I'm looking for something that looks creamy and delicious,0,0,0
+312,Give me an easy bacon and eggs recipe,1,0,1
+313,How to cook easy pasta with pesto?,2,0,1
+314,Easy vegetable pie recipe,1,0,1
+315,How do I cook chicken curry in under 45 minutes?,2,1,0
+316,Easy recipe using tofu and green beans,1,0,1
+317,What can I make with avocado and eggs quickly?,1,2,0
+318,Avocado and eggs in a rush,1,1,0
+319,Step-by-step to make a tiramisu in under 30 minutes,2,1,0
+320,How to cook beef stroganoff in under 1 hour?,2,1,0
+321,How to make spaghetti carbonara?,2,0,0
+322,What can I prepare with tofu and green beans in under 20 minutes?,1,1,0
+323,Suggest some soups to make in under 30 minutes,3,1,0
+324,Chicken dinner in a hurry,3,1,0
+325,Find me a quick low-fat lunch dish,3,2,0
+326,Show me an easy chicken dinner recipe,3,0,1
+327,What can I make with avocado and eggs under 20 minutes?,1,1,0
+328,Quick exotic recipe,0,2,0
+329,I want to bake a cake that looks festive in 60 minutes,0,1,0
+330,What to cook with ground beef and tomatoes in 25 minutes?,1,1,0
+331,Instructions for making a classic Margherita pizza,2,0,0
+332,Easy tiramisu recipe,2,0,1
+333,I need a low-fat dish for lunch,3,0,0
+334,Some beginner lunch recipes,3,0,1
+335,Easy simple stir fry recipe,2,0,1
+336,What are some fast bacon and egg recipes?,1,1,0
+337,Simple beef stew instructions,2,0,1
+338,Quick recipe for blueberry muffins,2,2,0
+339,Quick healthy breakfast,3,2,0
+340,Soup recipes that take little time,3,1,1
+341,Quick lasagna preparation,2,2,0
+342,How to cook pasta with pesto quickly?,2,2,0
+343,Tell me how to whip up an easy salad,3,0,1
+344,What easy recipe to cook with bacon and eggs?,1,0,1
+345,Quick creamy pasta recipe,2,2,0
+346,Can I get a recipe using tofu and green beans?,1,0,0
+347,Casual brunch in a short time,3,1,0
+348,Show me a pasta salad recipe in 15 minutes,3,1,0
+349,Lunch ideas in under 20 minutes,3,1,0
+350,Show me an easy salad recipe,3,0,1
+351,Rich and decadent recipe in under 40 minutes,0,1,0
+352,Recipe for chicken alfredo pasta quickly,2,2,0
+353,Easy rich and decadent recipe,0,0,1
+354,Easy pad Thai guide,2,0,1
+355,Easy chocolate and pecan baking,1,0,1
+356,Instructions for a simple seafood pasta in under 20 minutes,2,1,0
+357,Recipe for chocolate chip cookies in 20 minutes,2,1,0
+358,Easy beef stew recipe,2,0,1
+359,Tell me how to whip up a salad in under 10 minutes,3,1,0
+360,Show me how to cook a visually stunning dessert,0,0,0
+361,Suggest some soups to make quickly,3,2,0
+362,Show me a fast chicken dinner recipe,3,2,0
+363,Instructions for an easy seafood pasta,2,0,1
+364,What easy dish can I make with chickpeas and tomatoes?,1,0,1
+365,What can I make with chickpeas and tomatoes?,1,0,0
+366,Quick beef stew recipe,2,2,0
+367,How to make beef tacos?,2,0,0
+368,How to prepare pad Thai quickly?,2,2,0
+369,Show me a recipe for apple pie,3,0,0
+370,What easy recipe can I bake with chocolate and pecans?,1,0,1

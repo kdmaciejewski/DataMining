@@ -59,9 +59,17 @@ def calc_max_minutes(message : str, time : TimeCategory):
         logger.debug(f"Choose max {minutes} from {answer}")
         return minutes
     
-    logger.debug("Can't find specific time")
-    
-    return None
+    else:
+        
+        numbers = list(map(int, re.findall(r"\d+", message)))
+        
+        if len(numbers) == 0:
+            logger.debug("Can't find specific time")
+            return
+        
+        logger.debug(f"Did not detect time scale, defaulting to {numbers[0]} minutes")
+        
+        return numbers[0]
             
             
 
@@ -125,6 +133,7 @@ def get_recipes(message : str, intent : RecipyIntent, n_suggestions : int) -> tu
 if __name__ == "__main__":
     
     examples = [
+        ("chicken sandwhich in under 10", RecipyIntent(category=0, time=1, diff=0)),
         ("Something that looks healthy", RecipyIntent(category=0, time=0, diff=0)),
         ("Something that looks healthy and is quick", RecipyIntent(category=0, time=2, diff=0)),
         ("Something that looks healthy and needs to be quick", RecipyIntent(category=0, time=1, diff=0)),

@@ -13,59 +13,57 @@ from .gui import GuiInterface, CLI_GUI
 intent_detector = IntentDetector()
 GUI : GuiInterface = CLI_GUI()
 
+N_SUGGESTIONS = 5
+
+
+def query_recipe(message : str) -> tuple[QueryResult, str]:
+    
+    intent : RecipyIntent = intent_detector.get_recipy_intent(message)
+    
+    suggestion, max_minutes, max_steps = get_recipes(message = message, intent= intent, n_suggestions= N_SUGGESTIONS)
+    
+    add_string = ""
+    
+    if max_minutes is not None:
+        add_string = f", which take max {max_minutes} minutes"
+    if max_steps and add_string != "":
+        add_string += " and have few steps" if add_string else ",which have few steps"
+
+    return suggestion, add_string
     
     
-class RecipeChoice:
+def recipe_search(init_question) -> Optional[QueryResult]:
     
-    n_suggestions = 5    
+    question = init_question
+    
+    while True:
         
-    def recipe_search(self, question : str = "Hey, what would you like to cook today?") -> Optional[Recipe]:
-        
-        res = GUI.show_single_question_and_answer_field(question)
-        
-        intent : Intents = intent_detector.get_intent(s = res, agent_prompt= question)
+        message = GUI.show_single_question_and_answer_field(question)
+        intent : Intents = intent_detector.get_intent(s = message, agent_prompt= question)
         
         if intent == Intents.StopIntent:
             return
         
-        return self._choose_recipy(res, intent=intent)
-                
-
-    def _choose_recipy(self, message : str, intent : Intents):
-        
         if intent not in [Intents.SelectIntent, Intents.SuggestionsIntent, Intents.IdentifyProcessIntent]:
             logger.debug(f"Intent not for recipy decision {intent}")
-            return self.recipe_search("I am sorry. I can't understand you. What would you like to cook today?")
+            question = "I am sorry. I can't understand you. What would you like to cook today?"
+            continue
         
-        suggestions, add_string = self.query_recipe(message=message)
+        suggestions, add_string = query_recipe(message=message)
         
         if suggestions.n_hits == 0:
             
-            return self.recipe_search(f"Sadly I dont have a matching recipe{add_string}. Let's try again. What would you like to cook?")
+            question = f"Sadly I dont have a matching recipe{add_string}. Let's try again. What would you like to cook?"
+            continue
         
         
         chosen_recipe = GUI.recipy_choice(suggestions, add_string)
         
         if chosen_recipe is None:
-            return self.recipe_search(f"Let's try to find you something else. What would you like to cook?")
+            question = f"Let's try to find you something else. What would you like to cook?"
+            continue
             
         return chosen_recipe
-        
-    def query_recipe(self, message : str) -> tuple[QueryResult, str]:
-        
-        intent : RecipyIntent = intent_detector.get_recipy_intent(message)
-        
-        suggestion, max_minutes, max_steps = get_recipes(message = message, intent= intent, n_suggestions= self.n_suggestions)
-        
-        add_string = ""
-        
-        if max_minutes is not None:
-            add_string = f", which take max {max_minutes} minutes"
-        if max_steps and add_string != "":
-            add_string += " and have few steps" if add_string else ",which have few steps"
-
-        return suggestion, add_string
-            
         
 
 plan_llm_settings = PromptSettings()
@@ -112,36 +110,37 @@ class PlanLLMConversation:
         self.history += model_response + " <|endofturn|>"    
         return model_response
         
-
         
-        
-def dialog(init_message : Optional[str] = None):
+def dialog(init_message : str = "Hey, what would you like to cook today?"):
     
-    recipe = RecipeChoice().recipe_search() if init_message is None else RecipeChoice().recipe_search(init_message)
+    message = init_message
     
-    if recipe is None:
+    while True:
         
-        logger.debug("Recipy is None -> Stop Converstation")
-        return
-    
-    plan_llm_conv = PlanLLMConversation(recipe=recipe)
-    
-    conversation : list[tuple[str,str]] = [("model", plan_llm_conv.get_response())]
-    
-    while (response := GUI.render_plan_llm_conv(conversation=conversation, current_recipe=recipe)) is not None:
+        recipe = recipe_search(init_question= message)
         
-        intent = intent_detector.get_intent(s = response, agent_prompt=conversation[-1][1])
+        if recipe is None:
+            
+            logger.debug("Recipy is None -> Stop Converstation")
+            return
         
-        if intent == Intents.StopIntent:
-            break
+        plan_llm_conv = PlanLLMConversation(recipe=recipe)
         
-        conversation.append(("user", response))
+        conversation : list[tuple[str,str]] = [("model", plan_llm_conv.get_response())]
         
-        conversation.append(("model",plan_llm_conv.get_response( response)))
-    
-    dialog("Okay. Would you like to cook another recipe? If not say stop - else tell me what you would like to cook?")
-    
+        while (response := GUI.render_plan_llm_conv(conversation=conversation, current_recipe=recipe)) is not None:
+            
+            intent = intent_detector.get_intent(s = response, agent_prompt=conversation[-1][1])
+            
+            if intent == Intents.StopIntent:
+                break
+            
+            conversation.append(("user", response))
+            
+            conversation.append(("model",plan_llm_conv.get_response( response)))
         
+        message = "Okay. Would you like to cook another recipe? If not say stop - else tell me what you would like to cook?"        
+            
         
 def main():
     

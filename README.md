@@ -16,7 +16,7 @@ queries.py - Holds our queries
 
 ```
 pip install -r requirements.txt¸
-
+pip install optimum[exporters]
 pip install -e .
 
 optimum-cli export onnx -m sentence-transformers/all-MiniLM-L6-v2 --optimize O2 models/all-MiniLM-L6-v2
