@@ -2,7 +2,7 @@ from optimum.pipelines import pipeline
 from cooking_bot import REPO_PATH
 from pydantic import BaseModel
 from typing import List, Union
-
+import re
 
 
 class Answer(BaseModel):
@@ -41,3 +41,18 @@ def get_best_answer(contexts :Union[ List[str] , str], questions:Union[ List[str
 
     best_id = max(range(len(awnsers)), key= lambda x: awnsers[x].score)
     return awnsers[best_id], best_id
+
+
+def get_step_numbers(text):
+    # Regex to match the pattern
+    pattern = r"(?i)\bstep:?\s*(\d+)"
+    
+    # Search the text for the first occurrence of the pattern
+    match = re.search(pattern, text)
+    
+    if match:
+        # Return the first captured group, which is the digits
+        return int(match.group(1))
+    else:
+        # Return None if no match is found
+        return None

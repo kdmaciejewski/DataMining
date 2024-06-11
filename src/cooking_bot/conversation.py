@@ -4,14 +4,13 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 from .plan_llm import test_ping, send_message, PromptSettings
 from .intent_detector import IntentDetector
 from .intents import Intents, RecipyIntent
+from .manager_utils import get_step_numbers
 from cooking_bot.recipy_query import get_recipes
 from .data_formats import *
 from loguru import logger
-from .gui import GuiInterface, CLI_GUI
 from .gui import GuiInterface, CLI_GUI, TkinterGUI
 
 intent_detector = IntentDetector()
-# GUI : GuiInterface = CLI_GUI()
 GUI : GuiInterface = TkinterGUI()
 N_SUGGESTIONS = 5
 
@@ -83,6 +82,7 @@ class PlanLLMConversation:
     def __init__(self, recipe : Recipe):
             
         self.history = self._get_init_promt(recipe)
+        self.step_number = 1
             
     def _get_init_promt(self, recipe: Recipe):
         recipe_name = recipe.displayName
@@ -107,6 +107,10 @@ class PlanLLMConversation:
         if model_response is None:
             raise ConnectionError("Can't reach Plan LLM API")
             
+        number = get_step_numbers(model_response)
+        if number is not None:
+            self.step_number = number
+            
         self.history += model_response + " <|endofturn|>"    
         return model_response
         
@@ -128,7 +132,7 @@ def dialog(init_message : str = "Hey, what would you like to cook today?"):
         
         conversation : list[tuple[str,str]] = [("model", plan_llm_conv.get_response())]
         
-        while (response := GUI.render_plan_llm_conv(conversation=conversation, current_recipe=recipe)) is not None:
+        while (response := GUI.render_plan_llm_conv(conversation=conversation, current_recipe=recipe, step_number = plan_llm_conv.step_number)) is not None:
             
             intent = intent_detector.get_intent(s = response, agent_prompt=conversation[-1][1])
             

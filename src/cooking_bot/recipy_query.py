@@ -76,7 +76,7 @@ def calc_max_minutes(message : str, time : TimeCategory):
 
 def get_max_steps(intent : Difficulty):
     
-    if Difficulty.Easy: return EASY_MAX_STEPS
+    if intent == Difficulty.Easy: return EASY_MAX_STEPS
     
     return None
 
@@ -97,9 +97,9 @@ def get_recipes(message : str, intent : RecipyIntent, n_suggestions : int) -> tu
     elif intent.category == RecipyCategory.Specific:
         
         name =  get_awnser(message, "What is the name of the specific recipy?").text
-        logger.debug(f"Extracted name - {name}")
+        logger.debug(f"Extracted name - '{name}'")
         
-        res = query_recipies(name, mode = "vec", size = n_suggestions, min_cos_sim= .2, max_steps= max_steps, max_total_minutes = max_minutes)
+        res = query_recipies(name, mode = "text", size = n_suggestions, max_steps= max_steps, max_total_minutes = max_minutes)
     
     elif intent.category == RecipyCategory.General:
             
