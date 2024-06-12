@@ -6,7 +6,6 @@ __pycache__/
 jsons/
 notebooks/Lab*.ipynb
 models
-datasets
 
 # C extensions
 *.so

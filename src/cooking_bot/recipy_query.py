@@ -1,7 +1,7 @@
 from cooking_bot.manager_utils import get_awnser
 from cooking_bot.intents import TimeCategory, Difficulty, RecipyCategory, RecipyIntent
 from cooking_bot.data_formats import *
-from cooking_bot.querries import (
+from cooking_bot.queries import (
     get_recipy_by_ingredients,
     query_recipies,
 )

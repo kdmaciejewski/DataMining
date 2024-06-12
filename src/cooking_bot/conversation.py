@@ -1,14 +1,14 @@
 import os
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
-from .plan_llm import test_ping, send_message, PromptSettings
-from .intent_detector import IntentDetector
-from .intents import Intents, RecipyIntent
-from .manager_utils import get_step_numbers
+from cooking_bot.plan_llm import test_ping, send_message, PromptSettings
+from cooking_bot.intent_detector import IntentDetector
+from cooking_bot.intents import Intents, RecipyIntent
+from cooking_bot.manager_utils import get_step_numbers
 from cooking_bot.recipy_query import get_recipes
-from .data_formats import *
+from cooking_bot.data_formats import *
 from loguru import logger
-from .gui import GuiInterface, CLI_GUI, TkinterGUI
+from cooking_bot.gui import GuiInterface, CLI_GUI, TkinterGUI
 
 intent_detector = IntentDetector()
 GUI : GuiInterface = TkinterGUI()
@@ -156,3 +156,5 @@ def main():
     
 
 
+if __name__ == "__main__":
+    main()
